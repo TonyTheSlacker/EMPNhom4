@@ -1,0 +1,5 @@
+<Project>
+ <ItemGroup>
+ <Reference Include="System.Windows.Forms.DataVisualization" />
+ </ItemGroup>
+</Project>

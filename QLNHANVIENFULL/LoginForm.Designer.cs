@@ -1,0 +1,326 @@
+﻿namespace QLNHANVIENFULL
+{
+    partial class LoginForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnInfo = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.chkshow = new System.Windows.Forms.CheckBox();
+            this.chkRemember = new System.Windows.Forms.CheckBox();
+            this.Login = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblCheck = new System.Windows.Forms.Label();
+            this.btnForget = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel1.Controls.Add(this.btnInfo);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(495, 731);
+            this.panel1.TabIndex = 0;
+            // 
+            // btnInfo
+            // 
+            this.btnInfo.BackColor = System.Drawing.Color.LemonChiffon;
+            this.btnInfo.FlatAppearance.BorderSize = 0;
+            this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInfo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfo.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnInfo.Location = new System.Drawing.Point(209, 565);
+            this.btnInfo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Size = new System.Drawing.Size(55, 50);
+            this.btnInfo.TabIndex = 3;
+            this.btnInfo.Text = "i";
+            this.btnInfo.UseVisualStyleBackColor = false;
+            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
+            // 
+            // label2
+            // 
+            this.label2.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(79, 636);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(326, 86);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Written by Nhom4 and Clankers";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label1.Location = new System.Drawing.Point(76, 368);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(340, 166);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "EMPLOYEE MANAGEMENT SYSTEM";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtusername
+            // 
+            this.txtusername.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusername.Location = new System.Drawing.Point(838, 230);
+            this.txtusername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(228, 37);
+            this.txtusername.TabIndex = 0;
+            this.txtusername.Text = "username";
+            this.txtusername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtusername_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label3.Location = new System.Drawing.Point(579, 233);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(256, 34);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Admin Username:";
+            // 
+            // txtpassword
+            // 
+            this.txtpassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtpassword.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpassword.Location = new System.Drawing.Point(838, 295);
+            this.txtpassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.Size = new System.Drawing.Size(228, 37);
+            this.txtpassword.TabIndex = 1;
+            this.txtpassword.Text = "******";
+            this.txtpassword.UseSystemPasswordChar = true;
+            this.txtpassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtusername_KeyPress);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label4.Location = new System.Drawing.Point(579, 295);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(245, 34);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Admin Password:";
+            // 
+            // chkshow
+            // 
+            this.chkshow.AutoSize = true;
+            this.chkshow.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkshow.ForeColor = System.Drawing.Color.DarkOrange;
+            this.chkshow.Location = new System.Drawing.Point(865, 368);
+            this.chkshow.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkshow.Name = "chkshow";
+            this.chkshow.Size = new System.Drawing.Size(201, 29);
+            this.chkshow.TabIndex = 2;
+            this.chkshow.Text = "Show password";
+            this.chkshow.UseVisualStyleBackColor = true;
+            this.chkshow.CheckedChanged += new System.EventHandler(this.chkshow_CheckedChanged);
+            // 
+            // chkRemember
+            // 
+            this.chkRemember.AutoSize = true;
+            this.chkRemember.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRemember.ForeColor = System.Drawing.Color.DarkOrange;
+            this.chkRemember.Location = new System.Drawing.Point(819, 429);
+            this.chkRemember.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkRemember.Name = "chkRemember";
+            this.chkRemember.Size = new System.Drawing.Size(247, 29);
+            this.chkRemember.TabIndex = 4;
+            this.chkRemember.Text = "Remember account";
+            this.chkRemember.UseVisualStyleBackColor = true;
+            // 
+            // Login
+            // 
+            this.Login.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login.ForeColor = System.Drawing.Color.DarkOrange;
+            this.Login.Location = new System.Drawing.Point(585, 485);
+            this.Login.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(467, 75);
+            this.Login.TabIndex = 3;
+            this.Login.Text = "Login";
+            this.Login.UseVisualStyleBackColor = true;
+            this.Login.Click += new System.EventHandler(this.Login_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label5.Location = new System.Drawing.Point(609, 394);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(165, 34);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Clear Input";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label6.Location = new System.Drawing.Point(707, 57);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(209, 63);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "LOG IN";
+            // 
+            // lblCheck
+            // 
+            this.lblCheck.AutoSize = true;
+            this.lblCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCheck.ForeColor = System.Drawing.Color.Red;
+            this.lblCheck.Location = new System.Drawing.Point(685, 136);
+            this.lblCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCheck.Name = "lblCheck";
+            this.lblCheck.Size = new System.Drawing.Size(114, 31);
+            this.lblCheck.TabIndex = 7;
+            this.lblCheck.Text = "Warning";
+            this.lblCheck.Visible = false;
+            // 
+            // btnForget
+            // 
+            this.btnForget.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForget.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btnForget.Location = new System.Drawing.Point(585, 584);
+            this.btnForget.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnForget.Name = "btnForget";
+            this.btnForget.Size = new System.Drawing.Size(468, 75);
+            this.btnForget.TabIndex = 3;
+            this.btnForget.Text = "Forget Password?";
+            this.btnForget.UseVisualStyleBackColor = true;
+            this.btnForget.Click += new System.EventHandler(this.btnForget_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1077, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(89, 83);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QLNHANVIENFULL.Properties.Resources._1433235;
+            this.pictureBox1.Location = new System.Drawing.Point(75, 48);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(341, 297);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // LoginForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1166, 731);
+            this.Controls.Add(this.chkRemember);
+            this.Controls.Add(this.lblCheck);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnForget);
+            this.Controls.Add(this.Login);
+            this.Controls.Add(this.chkshow);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtpassword);
+            this.Controls.Add(this.txtusername);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "LoginForm";
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtusername;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtpassword;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox chkshow;
+        private System.Windows.Forms.CheckBox chkRemember;
+        private System.Windows.Forms.Button Login;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblCheck;
+        private System.Windows.Forms.Button btnForget;
+        private System.Windows.Forms.Button btnInfo;
+    }
+}

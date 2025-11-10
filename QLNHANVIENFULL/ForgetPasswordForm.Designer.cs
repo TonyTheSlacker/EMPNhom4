@@ -1,0 +1,284 @@
+﻿namespace QLNHANVIENFULL
+{
+    partial class ForgetPasswordForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgetPasswordForm));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.labelHeader = new System.Windows.Forms.Label();
+            this.btnRequest = new System.Windows.Forms.Button();
+            this.btnConfirm = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.lblOTP = new System.Windows.Forms.Label();
+            this.txtOTP = new System.Windows.Forms.TextBox();
+            this.lblNewPassword = new System.Windows.Forms.Label();
+            this.txtNewpassword = new System.Windows.Forms.TextBox();
+            this.chkShowPass = new System.Windows.Forms.CheckBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(520, 800);
+            this.panel1.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(84, 673);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(326, 99);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Written by Nhom4 and Clankers";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 16.125F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(81, 451);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(340, 166);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "EMPLOYEE MANAGEMENT SYSTEM";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QLNHANVIENFULL.Properties.Resources._14332352;
+            this.pictureBox1.Location = new System.Drawing.Point(54, 38);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(416, 378);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(1190, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(90, 86);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 20;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // labelHeader
+            // 
+            this.labelHeader.AutoSize = true;
+            this.labelHeader.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Bold);
+            this.labelHeader.ForeColor = System.Drawing.Color.DarkOrange;
+            this.labelHeader.Location = new System.Drawing.Point(626, 102);
+            this.labelHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelHeader.Name = "labelHeader";
+            this.labelHeader.Size = new System.Drawing.Size(541, 63);
+            this.labelHeader.TabIndex = 5;
+            this.labelHeader.Text = "FORGOT PASSWORD";
+            // 
+            // btnRequest
+            // 
+            this.btnRequest.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRequest.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btnRequest.Location = new System.Drawing.Point(600, 560);
+            this.btnRequest.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnRequest.Name = "btnRequest";
+            this.btnRequest.Size = new System.Drawing.Size(260, 75);
+            this.btnRequest.TabIndex = 4;
+            this.btnRequest.Text = "Request OTP";
+            this.btnRequest.UseVisualStyleBackColor = true;
+            this.btnRequest.Click += new System.EventHandler(this.btnRequest_Click);
+            // 
+            // btnConfirm
+            // 
+            this.btnConfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btnConfirm.Location = new System.Drawing.Point(880, 560);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(300, 75);
+            this.btnConfirm.TabIndex = 5;
+            this.btnConfirm.Text = "Confirm Reset";
+            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label3.Location = new System.Drawing.Point(600, 220);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(159, 34);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Username:";
+            // 
+            // txtUser
+            // 
+            this.txtUser.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.txtUser.Location = new System.Drawing.Point(847, 217);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(320, 37);
+            this.txtUser.TabIndex = 0;
+            // 
+            // lblOTP
+            // 
+            this.lblOTP.AutoSize = true;
+            this.lblOTP.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblOTP.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblOTP.Location = new System.Drawing.Point(600, 280);
+            this.lblOTP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOTP.Name = "lblOTP";
+            this.lblOTP.Size = new System.Drawing.Size(75, 34);
+            this.lblOTP.TabIndex = 14;
+            this.lblOTP.Text = "OTP:";
+            this.lblOTP.Visible = false;
+            // 
+            // txtOTP
+            // 
+            this.txtOTP.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.txtOTP.Location = new System.Drawing.Point(847, 277);
+            this.txtOTP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtOTP.Name = "txtOTP";
+            this.txtOTP.Size = new System.Drawing.Size(320, 37);
+            this.txtOTP.TabIndex = 1;
+            this.txtOTP.Visible = false;
+            // 
+            // lblNewPassword
+            // 
+            this.lblNewPassword.AutoSize = true;
+            this.lblNewPassword.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblNewPassword.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblNewPassword.Location = new System.Drawing.Point(600, 340);
+            this.lblNewPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNewPassword.Name = "lblNewPassword";
+            this.lblNewPassword.Size = new System.Drawing.Size(217, 34);
+            this.lblNewPassword.TabIndex = 14;
+            this.lblNewPassword.Text = "New Password:";
+            this.lblNewPassword.Visible = false;
+            // 
+            // txtNewpassword
+            // 
+            this.txtNewpassword.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.txtNewpassword.Location = new System.Drawing.Point(847, 337);
+            this.txtNewpassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNewpassword.Name = "txtNewpassword";
+            this.txtNewpassword.Size = new System.Drawing.Size(320, 37);
+            this.txtNewpassword.TabIndex = 2;
+            this.txtNewpassword.UseSystemPasswordChar = true;
+            this.txtNewpassword.Visible = false;
+            // 
+            // chkShowPass
+            // 
+            this.chkShowPass.AutoSize = true;
+            this.chkShowPass.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkShowPass.ForeColor = System.Drawing.Color.DarkOrange;
+            this.chkShowPass.Location = new System.Drawing.Point(944, 421);
+            this.chkShowPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkShowPass.Name = "chkShowPass";
+            this.chkShowPass.Size = new System.Drawing.Size(223, 32);
+            this.chkShowPass.TabIndex = 3;
+            this.chkShowPass.Text = "Show password";
+            this.chkShowPass.UseVisualStyleBackColor = true;
+            this.chkShowPass.Visible = false;
+            this.chkShowPass.CheckedChanged += new System.EventHandler(this.chkShowPass_CheckedChanged);
+            // 
+            // ForgetPasswordForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1280, 800);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.labelHeader);
+            this.Controls.Add(this.btnConfirm);
+            this.Controls.Add(this.btnRequest);
+            this.Controls.Add(this.chkShowPass);
+            this.Controls.Add(this.lblNewPassword);
+            this.Controls.Add(this.txtNewpassword);
+            this.Controls.Add(this.lblOTP);
+            this.Controls.Add(this.txtOTP);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "ForgetPasswordForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ForgetPasswordForm";
+            this.Load += new System.EventHandler(this.ForgetPasswordForm_Load);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label labelHeader;
+        private System.Windows.Forms.Button btnRequest;
+        private System.Windows.Forms.Button btnConfirm;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.Label lblOTP;
+        private System.Windows.Forms.TextBox txtOTP;
+        private System.Windows.Forms.Label lblNewPassword;
+        private System.Windows.Forms.TextBox txtNewpassword;
+        private System.Windows.Forms.CheckBox chkShowPass;
+    }
+}

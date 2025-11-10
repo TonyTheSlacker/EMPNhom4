@@ -1,0 +1,401 @@
+﻿namespace QLNHANVIENFULL
+{
+    partial class EmployeeForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeForm));
+            this.pnlMain = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dgvEmployee = new System.Windows.Forms.DataGridView();
+            this.pnlbottom = new System.Windows.Forms.Panel();
+            this.lblTotalSalary = new System.Windows.Forms.Label();
+            this.labelTotalSalaryTitle = new System.Windows.Forms.Label();
+            this.lbltotal = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.ptbAdd = new System.Windows.Forms.PictureBox();
+            this.pnltop = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imagecol = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlMain.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
+            this.pnlbottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAdd)).BeginInit();
+            this.pnltop.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // pnlMain
+            // 
+            this.pnlMain.Controls.Add(this.panel3);
+            this.pnlMain.Controls.Add(this.pnlbottom);
+            this.pnlMain.Controls.Add(this.pnltop);
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(0, 0);
+            this.pnlMain.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(1665, 908);
+            this.pnlMain.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dgvEmployee);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 158);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1665, 750);
+            this.panel3.TabIndex = 8;
+            // 
+            // dgvEmployee
+            // 
+            this.dgvEmployee.AllowUserToOrderColumns = true;
+            this.dgvEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEmployee.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Peru;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Edit,
+            this.Delete,
+            this.ID,
+            this.imagecol,
+            this.Column2,
+            this.column7,
+            this.Column4,
+            this.Column3,
+            this.Column5,
+            this.Column6});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEmployee.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvEmployee.EnableHeadersVisualStyles = false;
+            this.dgvEmployee.Location = new System.Drawing.Point(0, 0);
+            this.dgvEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvEmployee.Name = "dgvEmployee";
+            this.dgvEmployee.RowHeadersWidth = 51;
+            this.dgvEmployee.RowTemplate.Height = 24;
+            this.dgvEmployee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEmployee.Size = new System.Drawing.Size(1665, 750);
+            this.dgvEmployee.TabIndex = 0;
+            this.dgvEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellClick);
+            // 
+            // pnlbottom
+            // 
+            this.pnlbottom.BackColor = System.Drawing.Color.DarkOrange;
+            this.pnlbottom.Controls.Add(this.lblTotalSalary);
+            this.pnlbottom.Controls.Add(this.labelTotalSalaryTitle);
+            this.pnlbottom.Controls.Add(this.lbltotal);
+            this.pnlbottom.Controls.Add(this.label3);
+            this.pnlbottom.Controls.Add(this.label2);
+            this.pnlbottom.Controls.Add(this.txtSearch);
+            this.pnlbottom.Controls.Add(this.ptbAdd);
+            this.pnlbottom.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlbottom.Location = new System.Drawing.Point(0, 70);
+            this.pnlbottom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlbottom.Name = "pnlbottom";
+            this.pnlbottom.Size = new System.Drawing.Size(1665, 88);
+            this.pnlbottom.TabIndex = 6;
+            // 
+            // lblTotalSalary
+            // 
+            this.lblTotalSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotalSalary.AutoSize = true;
+            this.lblTotalSalary.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalSalary.ForeColor = System.Drawing.Color.White;
+            this.lblTotalSalary.Location = new System.Drawing.Point(1292, 49);
+            this.lblTotalSalary.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotalSalary.Name = "lblTotalSalary";
+            this.lblTotalSalary.Size = new System.Drawing.Size(78, 34);
+            this.lblTotalSalary.TabIndex = 6;
+            this.lblTotalSalary.Text = "Total";
+            this.lblTotalSalary.Visible = false;
+            // 
+            // labelTotalSalaryTitle
+            // 
+            this.labelTotalSalaryTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTotalSalaryTitle.AutoSize = true;
+            this.labelTotalSalaryTitle.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalSalaryTitle.ForeColor = System.Drawing.Color.White;
+            this.labelTotalSalaryTitle.Location = new System.Drawing.Point(1054, 49);
+            this.labelTotalSalaryTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTotalSalaryTitle.Name = "labelTotalSalaryTitle";
+            this.labelTotalSalaryTitle.Size = new System.Drawing.Size(177, 34);
+            this.labelTotalSalaryTitle.TabIndex = 5;
+            this.labelTotalSalaryTitle.Text = "Total Salary:";
+            this.labelTotalSalaryTitle.Visible = false;
+            // 
+            // lbltotal
+            // 
+            this.lbltotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbltotal.AutoSize = true;
+            this.lbltotal.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotal.ForeColor = System.Drawing.Color.White;
+            this.lbltotal.Location = new System.Drawing.Point(1292, 10);
+            this.lbltotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbltotal.Name = "lbltotal";
+            this.lbltotal.Size = new System.Drawing.Size(78, 34);
+            this.lbltotal.TabIndex = 4;
+            this.lbltotal.Text = "Total";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(1054, 10);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(230, 34);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Total Employee:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(93, 26);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 38);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Search:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(328, 20);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(643, 40);
+            this.txtSearch.TabIndex = 1;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // ptbAdd
+            // 
+            this.ptbAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ptbAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbAdd.Image = ((System.Drawing.Image)(resources.GetObject("ptbAdd.Image")));
+            this.ptbAdd.Location = new System.Drawing.Point(1555, 10);
+            this.ptbAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ptbAdd.Name = "ptbAdd";
+            this.ptbAdd.Size = new System.Drawing.Size(73, 64);
+            this.ptbAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbAdd.TabIndex = 0;
+            this.ptbAdd.TabStop = false;
+            this.ptbAdd.Click += new System.EventHandler(this.ptbAdd_Click);
+            // 
+            // pnltop
+            // 
+            this.pnltop.BackColor = System.Drawing.Color.DarkOrange;
+            this.pnltop.Controls.Add(this.label1);
+            this.pnltop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnltop.Location = new System.Drawing.Point(0, 0);
+            this.pnltop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnltop.Name = "pnltop";
+            this.pnltop.Size = new System.Drawing.Size(1665, 70);
+            this.pnltop.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(9, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(277, 44);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Employee Lists";
+            // 
+            // Edit
+            // 
+            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Edit.HeaderText = "Edit";
+            this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
+            this.Edit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Edit.MinimumWidth = 6;
+            this.Edit.Name = "Edit";
+            this.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Edit.Width = 69;
+            // 
+            // Delete
+            // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Delete.HeaderText = "Delete";
+            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
+            this.Delete.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.Width = 110;
+            // 
+            // ID
+            // 
+            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ID.DataPropertyName = "EmpID";
+            this.ID.HeaderText = "Employee ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            // 
+            // imagecol
+            // 
+            this.imagecol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.imagecol.DataPropertyName = "EmpImage";
+            this.imagecol.HeaderText = "Employee Image";
+            this.imagecol.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.imagecol.MinimumWidth = 6;
+            this.imagecol.Name = "imagecol";
+            this.imagecol.Width = 228;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.DataPropertyName = "EmpName";
+            this.Column2.HeaderText = "Full Name";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // column7
+            // 
+            this.column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.column7.DataPropertyName = "EmpGen";
+            this.column7.HeaderText = "Gender";
+            this.column7.MinimumWidth = 6;
+            this.column7.Name = "column7";
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.DataPropertyName = "EmpDOB";
+            this.Column4.HeaderText = "Birthdate";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.DataPropertyName = "DepName";
+            this.Column3.HeaderText = "Department";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column5.DataPropertyName = "EmpJDate";
+            this.Column5.HeaderText = "Join Date";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column6.DataPropertyName = "EmpSal";
+            this.Column6.HeaderText = "Salary(VNĐ)";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            // 
+            // EmployeeForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1665, 908);
+            this.Controls.Add(this.pnlMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "EmployeeForm";
+            this.Text = "EmployeeForm";
+            this.Load += new System.EventHandler(this.EmployeeForm_Load);
+            this.pnlMain.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
+            this.pnlbottom.ResumeLayout(false);
+            this.pnlbottom.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAdd)).EndInit();
+            this.pnltop.ResumeLayout(false);
+            this.pnltop.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.DataGridView dgvEmployee;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pnlbottom;
+        private System.Windows.Forms.PictureBox ptbAdd;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnltop;
+        private System.Windows.Forms.Label lbltotal;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Label lblTotalSalary;
+        private System.Windows.Forms.Label labelTotalSalaryTitle;
+        private System.Windows.Forms.DataGridViewImageColumn Edit;
+        private System.Windows.Forms.DataGridViewImageColumn Delete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewImageColumn imagecol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+    }
+}

@@ -1,0 +1,265 @@
+﻿using System;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
+
+namespace QLNHANVIENFULL {
+    public partial class UpdateSalaryForm : Form {
+
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        Salary salary = null; // entity originally passed from SalaryForm context
+        public UpdateSalaryForm(Salary sal = null) {
+            salary = sal;
+            InitializeComponent();
+        }
+        EmployeeDataContext db = new EmployeeDataContext();
+
+        private int CalculateMonths(DateTime from, DateTime to) {
+            from = from.Date;
+            to = to.Date;
+            if (to < from)
+                return 0;
+            int months = (to.Year - from.Year) * 12 + (to.Month - from.Month);
+            if (to.Day < from.Day)
+                months--; // last month incomplete
+            if (months < 1)
+                months = 1; // treat same/partial month as1
+            return months;
+        }
+
+        private long ComputeTotalByPaidDaysLong(int monthlySalary, DateTime from, DateTime to, int unpaidDays) {
+            var f = from.Date;
+            var t = to.Date;
+            if (t < f || monthlySalary <= 0)
+                return 0L;
+            int months = CalculateMonths(f, t);
+            if (months <= 0)
+                return 0L;
+            long gross = (long)months * (long)monthlySalary;
+            int rangeDays = (t - f).Days + 1;
+            int ud = Math.Min(Math.Max(unpaidDays, 0), Math.Max(rangeDays, 0));
+            decimal dailyRate = Math.Ceiling((decimal)monthlySalary / 30m);
+            decimal deduction = ud * dailyRate;
+            decimal net = ((decimal)gross) - deduction;
+            if (net < 0)
+                net = 0m;
+            if (net > long.MaxValue)
+                return long.MaxValue;
+            return (long)net;
+        }
+
+        private void LoadEmployee() {
+            // Bind by Employee ID (property name EmpID) so user can search/type IDs
+            cbbEmployee.Items.Clear();
+            cbbEmployee.DataSource = db.Employees;
+            cbbEmployee.DisplayMember = "EmpID"; // corrected casing
+            cbbEmployee.ValueMember = "EmpID";
+            cbbEmployee.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbEmployee.AutoCompleteSource = AutoCompleteSource.ListItems;
+
+            // Bind fullname list for optional selection
+            cbbEmpName.Items.Clear();
+            cbbEmpName.DataSource = db.Employees;
+            cbbEmpName.DisplayMember = "EmpName";
+            cbbEmpName.ValueMember = "EmpID"; // corrected casing
+            cbbEmpName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbEmpName.AutoCompleteSource = AutoCompleteSource.ListItems;
+
+            // Sync selections both ways
+            cbbEmployee.SelectedIndexChanged -= cbbEmployee_SelectedIndexChanged;
+            cbbEmpName.SelectedIndexChanged -= cbbEmpName_SelectedIndexChanged;
+            cbbEmployee.SelectedIndexChanged += cbbEmployee_SelectedIndexChanged;
+            cbbEmpName.SelectedIndexChanged += cbbEmpName_SelectedIndexChanged;
+        }
+
+        private void ReloadSalaryFromDb() {
+            if (salary == null)
+                return;
+            // Use local context to get fresh values (avoid stale entity from other DataContext)
+            var fresh = db.Salaries.SingleOrDefault(s => s.Scode == salary.Scode);
+            if (fresh != null)
+                salary = fresh; // replace reference
+        }
+
+        private void cbbEmployee_SelectedIndexChanged(object sender, EventArgs e) {
+            if (cbbEmployee.SelectedValue != null && cbbEmpName.ValueMember == "EmpID")
+            {
+                cbbEmpName.SelectedValue = cbbEmployee.SelectedValue;
+
+                // Prefill the next suggested period: start at the last To (half-open policy: previous [From, To) => next starts at previous To)
+                try
+                {
+                    int empId = Convert.ToInt32(cbbEmployee.SelectedValue);
+                    var last = db.Salaries
+                        .Where(s => s.EmployeeID == empId)
+                        .OrderByDescending(s => s.To)
+                        .FirstOrDefault();
+                    if (last != null)
+                    {
+                        var suggestedFrom = last.To.Date; // half-open implies previous To is first day of new range
+                        if (dtpkFrom.Value.Date != suggestedFrom)
+                            dtpkFrom.Value = suggestedFrom;
+                        if (dtpkTo.Value.Date <= suggestedFrom)
+                            dtpkTo.Value = suggestedFrom.AddMonths(1);
+                    }
+                } catch { /* ignore prefill issues */ }
+            }
+        }
+        private void cbbEmpName_SelectedIndexChanged(object sender, EventArgs e) {
+            if (cbbEmpName.SelectedValue != null && cbbEmployee.ValueMember == "EmpID")
+            {
+                cbbEmployee.SelectedValue = cbbEmpName.SelectedValue;
+            }
+        }
+
+        private void ptbClose_Click(object sender, EventArgs e) {
+            this.Dispose();
+        }
+
+        private void UpdateSalaryForm_Load(object sender, EventArgs e) {
+            LoadEmployee();
+            ReloadSalaryFromDb();
+            if (salary != null)
+            {
+                txtSalary.Text = CurrencyFormatter.Format(salary.Salary1);
+                try
+                {
+                    cbbEmployee.SelectedValue = salary.EmployeeID;
+                    cbbEmpName.SelectedValue = salary.EmployeeID;
+                } catch { }
+                dtpkFrom.Value = salary.From;
+                dtpkTo.Value = salary.To;
+                dtpkPayDate.Value = salary.Paydate;
+                numUnpaidDays.Value = salary.UnpaidDays.GetValueOrDefault(0);
+            }
+        }
+
+        // Half-open overlap check: [From, To) — allows boundary equality (adjacent periods). Avoid Nullable.Value use in query.
+        private bool HasOverlappingSalary(int empId, DateTime from, DateTime to, int? excludeScode = null) {
+            var f = from.Date;
+            var t = to.Date;
+            // Build query without referencing excludeScode.Value inside expression when null.
+            var q = db.Salaries.Where(s => s.EmployeeID == empId);
+            if (excludeScode.HasValue)
+            {
+                int ex = excludeScode.Value; // safe extraction
+                q = q.Where(s => s.Scode != ex);
+            }
+            // Execute server-side simple filter, then evaluate overlap in memory to keep logic clear and avoid provider issues.
+            foreach (var s in q)
+            {
+                if (f < s.To && s.From < t)
+                    return true; // overlap
+            }
+            return false;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e) {
+            if (string.IsNullOrWhiteSpace(cbbEmployee.Text) || string.IsNullOrWhiteSpace(txtSalary.Text))
+            {
+                MessageBox.Show("Miss data", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (cbbEmployee.SelectedValue == null)
+            {
+                MessageBox.Show("Select an employee", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            int empId = Convert.ToInt32(cbbEmployee.SelectedValue);
+            DateTime from = dtpkFrom.Value.Date;
+            DateTime to = dtpkTo.Value.Date;
+            if (from >= to)
+            {
+                MessageBox.Show("'From' date must be strictly before 'To' date.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (HasOverlappingSalary(empId, from, to, null))
+            {
+                MessageBox.Show("Salary period overlaps an existing record for this employee.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            var epl = db.Employees.SingleOrDefault(emp => emp.EmpID == empId);
+            var sal = new Salary
+            {
+                EmployeeID = empId,
+                EmployeeName = epl?.EmpName ?? string.Empty,
+                From = from,
+                To = to,
+                Period = CalculateMonths(from, to),
+                Paydate = dtpkPayDate.Value.Date,
+                UnpaidDays = (int)numUnpaidDays.Value
+            };
+            int parsedSal;
+            sal.Salary1 = int.TryParse(txtSalary.Text, out parsedSal) ? parsedSal : (epl?.EmpSal ?? 0);
+            sal.totalsal = ComputeTotalByPaidDaysLong(sal.Salary1, sal.From, sal.To, sal.UnpaidDays.GetValueOrDefault(0));
+            db.Salaries.InsertOnSubmit(sal);
+            db.SubmitChanges();
+            MessageBox.Show("Inserted Sucessfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Dispose();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e) {
+            if (salary == null)
+                return;
+            var tmp = db.Salaries.SingleOrDefault(m => m.Scode == salary.Scode);
+            if (tmp == null)
+                return;
+            if (cbbEmployee.SelectedValue == null)
+            {
+                MessageBox.Show("Select an employee", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            int empId = Convert.ToInt32(cbbEmployee.SelectedValue);
+            DateTime from = dtpkFrom.Value.Date;
+            DateTime to = dtpkTo.Value.Date;
+            if (from >= to)
+            {
+                MessageBox.Show("'From' date must be strictly before 'To' date.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (HasOverlappingSalary(empId, from, to, tmp.Scode))
+            {
+                MessageBox.Show("Updated period overlaps another salary record for this employee.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            tmp.EmployeeID = empId;
+            tmp.Salary1 = CurrencyFormatter.ParseToInt(txtSalary.Text);
+            if (tmp.Salary1 <= 0)
+            {
+                var epl = db.Employees.SingleOrDefault(emp => emp.EmpID == empId);
+                if (epl != null)
+                    tmp.Salary1 = epl.EmpSal;
+            }
+            var epl2 = db.Employees.SingleOrDefault(emp => emp.EmpID == empId);
+            tmp.EmployeeName = epl2?.EmpName ?? string.Empty;
+            tmp.From = from;
+            tmp.To = to;
+            tmp.Paydate = dtpkPayDate.Value.Date;
+            tmp.Period = CalculateMonths(from, to);
+            tmp.UnpaidDays = (int)numUnpaidDays.Value;
+            tmp.totalsal = ComputeTotalByPaidDaysLong(tmp.Salary1, tmp.From, tmp.To, tmp.UnpaidDays.GetValueOrDefault(0));
+            db.SubmitChanges();
+            MessageBox.Show("Updated Sucessfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Dispose();
+        }
+
+        private void pnltop_MouseDown(object sender, MouseEventArgs e) {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+        private void label4_Click(object sender, EventArgs e) {
+        }
+        private void dtpkPayDate_ValueChanged(object sender, EventArgs e) {
+        }
+    }
+}

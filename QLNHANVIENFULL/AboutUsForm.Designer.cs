@@ -1,0 +1,118 @@
+﻿namespace QLNHANVIENFULL {
+    partial class AboutUsForm {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing) {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutUsForm));
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.bottomPanel = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.flpCards = new System.Windows.Forms.FlowLayoutPanel();
+            this.bottomPanel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.BackColor = System.Drawing.Color.DarkOrange;
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Aqua;
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(1881, 86);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "TEAM MEMBERS";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bottomPanel
+            // 
+            this.bottomPanel.BackColor = System.Drawing.Color.DarkOrange;
+            this.bottomPanel.Controls.Add(this.btnClose);
+            this.bottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bottomPanel.Location = new System.Drawing.Point(0, 784);
+            this.bottomPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bottomPanel.Name = "bottomPanel";
+            this.bottomPanel.Size = new System.Drawing.Size(1881, 116);
+            this.bottomPanel.TabIndex = 2;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.White;
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btnClose.Location = new System.Drawing.Point(1681, 22);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(187, 80);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // flpCards
+            // 
+            this.flpCards.AutoScroll = true;
+            this.flpCards.BackColor = System.Drawing.Color.Turquoise;
+            this.flpCards.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpCards.Location = new System.Drawing.Point(0, 86);
+            this.flpCards.Margin = new System.Windows.Forms.Padding(10);
+            this.flpCards.Name = "flpCards";
+            this.flpCards.Padding = new System.Windows.Forms.Padding(10);
+            this.flpCards.Size = new System.Drawing.Size(1881, 698);
+            this.flpCards.TabIndex = 1;
+            this.flpCards.WrapContents = false;
+            // 
+            // AboutUsForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(1881, 900);
+            this.Controls.Add(this.flpCards);
+            this.Controls.Add(this.bottomPanel);
+            this.Controls.Add(this.lblTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.Name = "AboutUsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "About Us";
+            this.bottomPanel.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Panel bottomPanel;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.FlowLayoutPanel flpCards;
+    }
+}

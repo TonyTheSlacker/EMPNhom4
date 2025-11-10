@@ -1,0 +1,159 @@
+﻿using Microsoft.Reporting.WinForms;
+using System;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Windows.Forms;
+
+namespace QLNHANVIENFULL {
+    public partial class ReportForm : Form {
+        EmployeeDataContext db = new EmployeeDataContext();
+        public ReportForm() {
+            InitializeComponent();
+        }
+
+        private void ReportForm_Load(object sender, EventArgs e) {
+            cbbGender.Items.Clear();
+            cbbGender.Items.AddRange(new object[] { "All", "Male", "Female" });
+            cbbGender.SelectedIndex = 0;
+            rdoAllDay.Checked = true;
+
+            // Populate names and IDs
+            var employees = db.Employees.Select(emp => new { emp.EmpID, emp.EmpName }).ToList();
+            cbbFullName.Items.Clear();
+            cbbEmpID.Items.Clear();
+            cbbFullName.Items.Add("All");
+            cbbEmpID.Items.Add("All");
+            foreach (var emp in employees)
+            {
+                cbbFullName.Items.Add(emp.EmpName);
+                cbbEmpID.Items.Add(emp.EmpID.ToString());
+            }
+            cbbFullName.SelectedIndex = 0;
+            cbbEmpID.SelectedIndex = 0;
+        }
+
+        private string ResolveReportDefinition(string fileName, out bool embedded) {
+            embedded = false;
+            // Try embedded resource first
+            var asm = Assembly.GetExecutingAssembly();
+            var resourceName = asm.GetManifestResourceNames().FirstOrDefault(n => n.EndsWith(fileName, StringComparison.OrdinalIgnoreCase));
+            if (resourceName != null)
+            {
+                embedded = true;
+                return resourceName;
+            }
+
+            // Physical path search (output dir + parent levels + project folder)
+            string[] roots = new[] {
+                Application.StartupPath,
+                Environment.CurrentDirectory
+            };
+            foreach (var root in roots)
+            {
+                var p = Path.Combine(root, fileName);
+                if (File.Exists(p))
+                    return p;
+            }
+            var dir = new DirectoryInfo(Application.StartupPath);
+            for (int i = 0; i < 6 && dir != null; i++)
+            {
+                var candidate = Path.Combine(dir.FullName, fileName);
+                if (File.Exists(candidate))
+                    return candidate;
+                var projCandidate = Path.Combine(dir.FullName, "QLNHANVIENFULL", fileName);
+                if (File.Exists(projCandidate))
+                    return projCandidate;
+                dir = dir.Parent;
+            }
+            return null;
+        }
+
+        private void btnExport_Click(object sender, EventArgs e) {
+            try
+            {
+                reportViewer1.Reset();
+                reportViewer1.ProcessingMode = ProcessingMode.Local;
+
+                bool embedded;
+                var reportDef = ResolveReportDefinition("Report1.rdlc", out embedded);
+                if (reportDef == null)
+                {
+                    throw new InvalidOperationException("Cannot locate Report1.rdlc. Set its Build Action to 'Embedded Resource' OR Copy to Output Directory.");
+                }
+                if (embedded)
+                {
+                    using (var s = Assembly.GetExecutingAssembly().GetManifestResourceStream(reportDef))
+                    {
+                        reportViewer1.LocalReport.LoadReportDefinition(s);
+                    }
+                } else
+                {
+                    reportViewer1.LocalReport.ReportPath = reportDef; // file path
+                }
+
+                string gender = cbbGender.Text;
+                string nameSelected = cbbFullName.Text;
+                string idSelected = cbbEmpID.Text;
+
+                var baseQuery = db.Salaries.AsQueryable();
+                if (gender != "All")
+                    baseQuery = baseQuery.Where(m => m.Employee.EmpGen == gender);
+                if (nameSelected != "All")
+                    baseQuery = baseQuery.Where(m => m.EmployeeName == nameSelected);
+                if (idSelected != "All")
+                    baseQuery = baseQuery.Where(m => m.Employee.EmpID.ToString() == idSelected);
+                if (rdoFromto.Checked)
+                {
+                    DateTime fromDate = dtpkFrom.Value.Date;
+                    DateTime toDate = dtpkTo.Value.Date;
+                    baseQuery = baseQuery.Where(m => m.From >= fromDate && m.To <= toDate);
+                }
+
+                var projected = baseQuery.OrderBy(m => m.Employee.EmpID).Select(m => new
+                {
+                    EmployeeID = m.Employee.EmpID,
+                    m.Scode,
+                    m.EmployeeName,
+                    Salary = m.Salary1, // use record salary, not employee base
+                    Period = m.Period, // rename to match RDLC field & header (will display as Month)
+                    m.From,
+                    m.To,
+                    m.Paydate,
+                    totalsal = m.totalsal, // rename to match RDLC field & header (will display as Total Salary)
+                    UnpaidDays = m.UnpaidDays // Include UnpaidDays in the projection
+                }).ToList(); // materialize to avoid deferred issues
+
+                var ds = new ReportDataSource("Salary", projected);
+                reportViewer1.LocalReport.DataSources.Clear();
+                reportViewer1.LocalReport.DataSources.Add(ds);
+
+                var rp = new ReportParameter("DateTimeNowRp", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+                reportViewer1.LocalReport.SetParameters(rp);
+                reportViewer1.RefreshReport();
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Report error: " + ex.Message + (ex.InnerException != null ? "\nInner: " + ex.InnerException.Message : ""), "Report", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnChart_Click(object sender, EventArgs e) {
+            using (var chartForm = new StatisticsChartForm())
+            {
+                chartForm.ShowDialog(this);
+            }
+        }
+
+        private void rdoAllDay_CheckedChanged(object sender, EventArgs e) {
+            bool enableRange = !rdoAllDay.Checked;
+            dtpkFrom.Enabled = enableRange;
+            dtpkTo.Enabled = enableRange;
+        }
+        private void label3_Click(object sender, EventArgs e) {
+        }
+        private void cbbFullName_SelectedIndexChanged(object sender, EventArgs e) {
+        }
+        private void cbbEmpID_SelectedIndexChanged(object sender, EventArgs e) {
+        }
+    }
+}
