@@ -26,10 +26,11 @@ namespace EmployeeManagementSystem.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\GAYASSNIGGER;Initial Catalog=EmployeeManagementSystem;Integrated Security=True")]
-        public string QLNHANVIENConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SURFACE\\MYSQL;Initial Catalog=EmployeeManagementSystem;Integrated Sec" +
+            "urity=True")]
+        public string EmployeeManagementSystemConnectionString {
             get {
-                return ((string)(this["QLNHANVIENConnectionString"]));
+                return ((string)(this["EmployeeManagementSystemConnectionString"]));
             }
         }
     }

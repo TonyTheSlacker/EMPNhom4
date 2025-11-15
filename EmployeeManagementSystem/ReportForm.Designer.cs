@@ -59,7 +59,8 @@
             // 
             this.reportViewer1.AutoSize = true;
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "QLNHANVIENFULL.Report1.rdlc";
+            // Prevent automatic embedded report load; the loader will load the RDLC at runtime.
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "";
             this.reportViewer1.Location = new System.Drawing.Point(0, 120);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;

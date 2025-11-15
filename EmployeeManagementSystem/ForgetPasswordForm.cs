@@ -107,7 +107,7 @@ namespace EmployeeManagementSystem {
                     {
                         smtp.Send(message);
                     }
-                    MessageBox.Show("OTP Sent Successfully! Please check your email!q");
+                    MessageBox.Show("OTP Sent Successfully! Please check your email!");
                 } catch (Exception ex)
                 {
                     MessageBox.Show(ex.ToString());

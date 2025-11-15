@@ -123,7 +123,7 @@ private void InitializeComponent()
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(125, 60);
             this.btnPrint.TabIndex = 1;
-            this.btnPrint.Text = "Print";
+            this.btnPrint.Text = "PDF";
             this.btnPrint.UseVisualStyleBackColor = false;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
@@ -140,7 +140,7 @@ private void InitializeComponent()
             this.btnExportImage.Name = "btnExportImage";
             this.btnExportImage.Size = new System.Drawing.Size(145, 56);
             this.btnExportImage.TabIndex = 2;
-            this.btnExportImage.Text = "Export";
+            this.btnExportImage.Text = "Image";
             this.btnExportImage.UseVisualStyleBackColor = false;
             this.btnExportImage.Click += new System.EventHandler(this.btnExportImage_Click);
             // 

@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
+using System.Globalization; // added for Vietnamese currency formatting
 
 namespace EmployeeManagementSystem {
     public partial class ReportForm : Form {
@@ -12,26 +13,12 @@ namespace EmployeeManagementSystem {
             InitializeComponent();
         }
 
-        private void ReportForm_Load(object sender, EventArgs e) {
-            cbbGender.Items.Clear();
-            cbbGender.Items.AddRange(new object[] { "All", "Male", "Female" });
-            cbbGender.SelectedIndex = 0;
-            rdoAllDay.Checked = true;
-
-            // Populate names and IDs
-            var employees = db.Employees.Select(emp => new { emp.EmpID, emp.EmpName }).ToList();
-            cbbFullName.Items.Clear();
-            cbbEmpID.Items.Clear();
-            cbbFullName.Items.Add("All");
-            cbbEmpID.Items.Add("All");
-            foreach (var emp in employees)
-            {
-                cbbFullName.Items.Add(emp.EmpName);
-                cbbEmpID.Items.Add(emp.EmpID.ToString());
-            }
-            cbbFullName.SelectedIndex = 0;
-            cbbEmpID.SelectedIndex = 0;
+        // Helper to format number like 123.000.000 VNĐ (Vietnamese thousands separator '.')
+        private string FormatVnd(long amount) {
+            if (amount < 0) amount = 0; // no negatives in this context
+            return amount.ToString("N0", new CultureInfo("vi-VN")) + " VNĐ"; // N0 uses grouping and no decimals
         }
+        private string FormatVnd(int amount) { return FormatVnd((long)amount); }
 
         private string ResolveReportDefinition(string fileName, out bool embedded) {
             embedded = false;
@@ -61,7 +48,8 @@ namespace EmployeeManagementSystem {
                 var candidate = Path.Combine(dir.FullName, fileName);
                 if (File.Exists(candidate))
                     return candidate;
-                var projCandidate = Path.Combine(dir.FullName, "QLNHANVIENFULL", fileName);
+                // project folder name might be the solution/project namespace - ensure we search for EmployeeManagementSystem
+                var projCandidate = Path.Combine(dir.FullName, "EmployeeManagementSystem", fileName);
                 if (File.Exists(projCandidate))
                     return projCandidate;
                 dir = dir.Parent;
@@ -69,29 +57,115 @@ namespace EmployeeManagementSystem {
             return null;
         }
 
-        private void btnExport_Click(object sender, EventArgs e) {
+        private bool TryLoadReportDefinition(out string errorMessage)
+        {
+            errorMessage = null;
             try
             {
+                // Ensure report viewer in local mode and clear previous definition
                 reportViewer1.Reset();
                 reportViewer1.ProcessingMode = ProcessingMode.Local;
+                // Prevent designer-embedded resource from auto-loading
+                reportViewer1.LocalReport.ReportEmbeddedResource = string.Empty;
 
                 bool embedded;
                 var reportDef = ResolveReportDefinition("Report1.rdlc", out embedded);
                 if (reportDef == null)
                 {
-                    throw new InvalidOperationException("Cannot locate Report1.rdlc. Set its Build Action to 'Embedded Resource' OR Copy to Output Directory.");
+                    errorMessage = "Cannot locate Report1.rdlc. Set its Build Action to 'Embedded Resource' OR Copy to Output Directory.";
+                    return false;
                 }
+
                 if (embedded)
                 {
                     using (var s = Assembly.GetExecutingAssembly().GetManifestResourceStream(reportDef))
                     {
+                        if (s == null)
+                        {
+                            errorMessage = "Embedded resource stream not found: " + reportDef;
+                            return false;
+                        }
                         reportViewer1.LocalReport.LoadReportDefinition(s);
                     }
-                } else
+                }
+                else
                 {
-                    reportViewer1.LocalReport.ReportPath = reportDef; // file path
+                    reportViewer1.LocalReport.ReportPath = reportDef;
                 }
 
+                // Do not bind data sources here; leave it to export or later actions
+                reportViewer1.LocalReport.DataSources.Clear();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                errorMessage = ex.Message + (ex.InnerException != null ? " | Inner: " + ex.InnerException.Message : string.Empty);
+                return false;
+            }
+        }
+
+        private void ReportForm_Load(object sender, EventArgs e) {
+            cbbGender.Items.Clear();
+            cbbGender.Items.AddRange(new object[] { "All", "Male", "Female" });
+            cbbGender.SelectedIndex = 0;
+            rdoAllDay.Checked = true;
+
+            // Populate names and IDs
+            var employees = db.Employees.Select(emp => new { emp.EmpID, emp.EmpName }).ToList();
+            cbbFullName.Items.Clear();
+            cbbEmpID.Items.Clear();
+            cbbFullName.Items.Add("All");
+            cbbEmpID.Items.Add("All");
+            foreach (var emp in employees)
+            {
+                cbbFullName.Items.Add(emp.EmpName);
+                cbbEmpID.Items.Add(emp.EmpID.ToString());
+            }
+            cbbFullName.SelectedIndex = 0;
+            cbbEmpID.SelectedIndex = 0;
+
+            // Try to load RDLC safely to avoid invalid-definition crash
+            string err;
+            if (TryLoadReportDefinition(out err))
+            {
+                // Load all data initially
+                RefreshReportData();
+            }
+            else
+            {
+                // Show the definition error if it occurs
+                MessageBox.Show("Failed to load report definition: " + err, "Report Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnExport_Click(object sender, EventArgs e) {
+            try
+            {
+                // Re-bind data before exporting to ensure filters are applied
+                RefreshReportData();
+
+                // Ask user where to save PDF
+                using (var sfd = new SaveFileDialog { Filter = "PDF File|*.pdf", FileName = "EmployeeReport_" + DateTime.Now.ToString("yyyyMMdd_HHmm") + ".pdf" })
+                {
+                    if (sfd.ShowDialog(this) == DialogResult.OK)
+                    {
+                        string mimeType, encoding, extension;
+                        string[] streamIds; Warning[] warnings;
+                        byte[] pdfBytes = reportViewer1.LocalReport.Render("PDF", null, out mimeType, out encoding, out extension, out streamIds, out warnings);
+                        File.WriteAllBytes(sfd.FileName, pdfBytes);
+                        MessageBox.Show("PDF exported to:\n" + sfd.FileName, "Export", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Report error: " + ex.Message + (ex.InnerException != null ? "\nInner: " + ex.InnerException.Message : ""), "Report", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void RefreshReportData()
+        {
+            try
+            {
                 string gender = cbbGender.Text;
                 string nameSelected = cbbFullName.Text;
                 string idSelected = cbbEmpID.Text;
@@ -115,25 +189,24 @@ namespace EmployeeManagementSystem {
                     EmployeeID = m.Employee.EmpID,
                     m.Scode,
                     m.EmployeeName,
-                    Salary = m.Salary1, // use record salary, not employee base
-                    Period = m.Period, // rename to match RDLC field & header (will display as Month)
+                    Salary = m.Salary1,
+                    Period = m.Period,
                     m.From,
                     m.To,
                     m.Paydate,
-                    totalsal = m.totalsal, // rename to match RDLC field & header (will display as Total Salary)
-                    UnpaidDays = m.UnpaidDays // Include UnpaidDays in the projection
-                }).ToList(); // materialize to avoid deferred issues
+                    totalsal = m.totalsal ?? 0,
+                    UnpaidDays = m.UnpaidDays
+                }).ToList();
 
                 var ds = new ReportDataSource("Salary", projected);
                 reportViewer1.LocalReport.DataSources.Clear();
                 reportViewer1.LocalReport.DataSources.Add(ds);
 
-                var rp = new ReportParameter("DateTimeNowRp", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
-                reportViewer1.LocalReport.SetParameters(rp);
                 reportViewer1.RefreshReport();
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show("Report error: " + ex.Message + (ex.InnerException != null ? "\nInner: " + ex.InnerException.Message : ""), "Report", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Failed to refresh report data: " + ex.Message, "Report Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -149,11 +222,22 @@ namespace EmployeeManagementSystem {
             dtpkFrom.Enabled = enableRange;
             dtpkTo.Enabled = enableRange;
         }
+
+        private void Filters_Changed(object sender, EventArgs e)
+        {
+            if (this.Visible) // Only refresh if form is loaded
+            {
+                RefreshReportData();
+            }
+        }
+
         private void label3_Click(object sender, EventArgs e) {
         }
         private void cbbFullName_SelectedIndexChanged(object sender, EventArgs e) {
+            Filters_Changed(sender, e);
         }
         private void cbbEmpID_SelectedIndexChanged(object sender, EventArgs e) {
+            Filters_Changed(sender, e);
         }
     }
 }

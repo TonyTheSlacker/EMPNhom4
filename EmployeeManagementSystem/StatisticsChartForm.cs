@@ -1,6 +1,5 @@
 using System;
 using System.Drawing;
-using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
@@ -8,7 +7,6 @@ using System.Windows.Forms;
 namespace EmployeeManagementSystem {
     public partial class StatisticsChartForm : Form {
         private readonly EmployeeDataContext db = new EmployeeDataContext();
-        private Bitmap _printBitmap;
         private decimal maxValue;
         private System.Collections.Generic.List<(string Label, decimal Value)> currentData;
         public StatisticsChartForm() {
@@ -57,10 +55,7 @@ namespace EmployeeManagementSystem {
                 cboEmployee.Items.Add("(Select Employee)");
                 foreach (var emp in list)
                     cboEmployee.Items.Add(emp.EmpID + " - " + emp.EmpName);
-                if (list.Count > 0)
-                    cboEmployee.SelectedIndex = 1;
-                else
-                    cboEmployee.SelectedIndex = 0;
+                cboEmployee.SelectedIndex = list.Count > 0 ? 1 : 0;
             } catch { }
         }
         private int? SelectedEmployeeId() {
@@ -74,6 +69,15 @@ namespace EmployeeManagementSystem {
                 if (int.TryParse(text.Substring(0, dash).Trim(), out id))
                     return id;
             }
+            return null;
+        }
+        private string SelectedEmployeeName() {
+            if (cboEmployee.SelectedIndex <= 0)
+                return null;
+            var text = cboEmployee.SelectedItem.ToString();
+            int dash = text.IndexOf('-');
+            if (dash > 0 && dash + 1 < text.Length)
+                return text.Substring(dash + 1).Trim();
             return null;
         }
         private void UpdateControlVisibility() {
@@ -94,16 +98,16 @@ namespace EmployeeManagementSystem {
                 {
                     lblTitle.Text = "Salary by Department";
                     currentData = db.Salaries.Select(s => new { Dept = s.Employee.EmpDep, s.totalsal })
-                    .ToList().GroupBy(x => x.Dept)
-                    .Select(g => (Label: db.Departments.Where(d => d.DepId == g.Key).Select(d => d.DepName).FirstOrDefault() ?? ("Dept " + g.Key), Value: g.Sum(z => (decimal)z.totalsal)))
-                    .OrderByDescending(x => x.Value).ToList();
+                        .ToList().GroupBy(x => x.Dept)
+                        .Select(g => (Label: db.Departments.Where(d => d.DepId == g.Key).Select(d => d.DepName).FirstOrDefault() ?? ("Dept " + g.Key), Value: g.Sum(z => (decimal)z.totalsal)))
+                        .OrderByDescending(x => x.Value).ToList();
                 } else if (cboMode.SelectedIndex == 1)
                 {
                     lblTitle.Text = "Total Salary by Month";
                     currentData = db.Salaries.Select(s => new { s.Paydate, s.totalsal })
-                    .ToList().GroupBy(x => new { x.Paydate.Year, x.Paydate.Month })
-                    .Select(g => (Label: new DateTime(g.Key.Year, g.Key.Month, 1).ToString("MM/yyyy"), Value: g.Sum(z => (decimal)z.totalsal)))
-                    .OrderBy(x => DateTime.Parse("01/" + x.Label)).ToList();
+                        .ToList().GroupBy(x => new { x.Paydate.Year, x.Paydate.Month })
+                        .Select(g => (Label: new DateTime(g.Key.Year, g.Key.Month, 1).ToString("MM/yyyy"), Value: g.Sum(z => (decimal)z.totalsal)))
+                        .OrderBy(x => DateTime.Parse("01/" + x.Label)).ToList();
                 } else
                 {
                     lblTitle.Text = "Employee Earnings by Month";
@@ -118,9 +122,9 @@ namespace EmployeeManagementSystem {
                         query = query.Where(s => s.Paydate.Date >= f && s.Paydate.Date <= t);
                     }
                     currentData = query.Select(s => new { s.Paydate, s.totalsal }).ToList()
-                    .GroupBy(x => new { x.Paydate.Year, x.Paydate.Month })
-                    .Select(g => (Label: new DateTime(g.Key.Year, g.Key.Month, 1).ToString("MM/yyyy"), Value: g.Sum(z => (decimal)z.totalsal)))
-                    .OrderBy(x => DateTime.Parse("01/" + x.Label)).ToList();
+                        .GroupBy(x => new { x.Paydate.Year, x.Paydate.Month })
+                        .Select(g => (Label: new DateTime(g.Key.Year, g.Key.Month, 1).ToString("MM/yyyy"), Value: g.Sum(z => (decimal)z.totalsal)))
+                        .OrderBy(x => DateTime.Parse("01/" + x.Label)).ToList();
                 }
                 maxValue = currentData.Count > 0 ? currentData.Max(d => d.Value) : 1m;
                 canvas.Invalidate();
@@ -246,7 +250,7 @@ namespace EmployeeManagementSystem {
             try
             {
                 using (var bmp = CreateChartBitmap())
-                using (var sfd = new SaveFileDialog { Filter = "PNG Image|*.png|JPEG Image|*.jpg;*.jpeg|Bitmap Image|*.bmp", FileName = (string.IsNullOrWhiteSpace(lblTitle.Text) ? "Chart" : lblTitle.Text.Replace(' ', '_')) + "_" + DateTime.Now.ToString("yyyyMMdd_HHmm") })
+                using (var sfd = new SaveFileDialog { Filter = "PNG Image|*.png|JPEG Image|*.jpg;*.jpeg|Bitmap Image|*.bmp", FileName = BuildBaseFileName() })
                 {
                     if (sfd.ShowDialog(this) == DialogResult.OK)
                     {
@@ -277,23 +281,78 @@ namespace EmployeeManagementSystem {
                 }
             } catch (Exception ex) { MessageBox.Show("Failed to export image: " + ex.Message, "Export", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
+
+        private string BuildBaseFileName() {
+            // Base title from form label
+            string baseTitle = string.IsNullOrWhiteSpace(lblTitle.Text) ? "Chart" : lblTitle.Text.Replace(' ', '_');
+
+            // If employee mode, include ID + Name
+            if (cboMode.SelectedIndex == 2)
+            {
+                var id = SelectedEmployeeId();
+                var name = SelectedEmployeeName();
+                if (id.HasValue && !string.IsNullOrEmpty(name))
+                    baseTitle = "Employee_" + id.Value + "_" + name.Replace(' ', '_');
+            }
+
+            // Optional range part when employee mode + range selected
+            string rangePart = "";
+            if (cboMode.SelectedIndex == 2 && chkRange.Checked)
+            {
+                rangePart = "_Range_" + dtFrom.Value.ToString("yyyyMMdd") + "-" + dtTo.Value.ToString("yyyyMMdd");
+            }
+
+            // Printable date/time stamp (current print time)
+            string printedStamp = DateTime.Now.ToString("yyyyMMdd_HHmm"); // or use "yyyy-MM-dd_HH-mm" if you prefer dashes
+
+            return baseTitle + rangePart + "_Printed_" + printedStamp;
+        }
+
         private void btnPrint_Click(object sender, EventArgs e) {
             try
             {
-                if (_printBitmap != null)
+                using (var bmp = CreateChartBitmap())
+                using (var sfd = new SaveFileDialog { Filter = "PDF File|*.pdf", FileName = BuildBaseFileName() + ".pdf" })
                 {
-                    _printBitmap.Dispose();
-                    _printBitmap = null;
+                    if (sfd.ShowDialog(this) == DialogResult.OK)
+                    {
+                        byte[] jpgBytes;
+                        using (var ms = new MemoryStream())
+                        {
+                            bmp.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                            jpgBytes = ms.ToArray();
+                        }
+                        int imgWpt = (int)(bmp.Width * 72.0 / bmp.HorizontalResolution);
+                        int imgHpt = (int)(bmp.Height * 72.0 / bmp.VerticalResolution);
+                        int pageW = Math.Max(imgWpt + 40, 595);
+                        int pageH = Math.Max(imgHpt + 80, 842);
+                        int imgX = (pageW - imgWpt) / 2;
+                        int imgY = (pageH - imgHpt) / 2;
+                        using (var fs = new FileStream(sfd.FileName, FileMode.Create, FileAccess.Write))
+                        using (var bw = new BinaryWriter(fs))
+                        {
+                            bw.Write(System.Text.Encoding.ASCII.GetBytes("%PDF-1.4\n"));
+                            var offsets = new System.Collections.Generic.List<long>();
+                            Action<string> writeObj = (s) => { offsets.Add(fs.Position); bw.Write(System.Text.Encoding.ASCII.GetBytes(s)); };
+                            writeObj("1 0 obj<< /Type /Catalog /Pages 2 0 R >>endobj\n");
+                            writeObj("2 0 obj<< /Type /Pages /Kids [3 0 R] /Count 1 >>endobj\n");
+                            // Correct page dictionary (removed duplicate >>)
+                            writeObj(string.Format("3 0 obj<< /Type /Page /Parent 2 0 R /MediaBox [0 0 {0} {1}] /Resources << /XObject << /Im0 4 0 R >> /ProcSet [/PDF /ImageC] >> /Contents 5 0 R >>endobj\n", pageW, pageH));
+                            writeObj(string.Format("4 0 obj<< /Type /XObject /Subtype /Image /Width {0} /Height {1} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length {2} >>stream\n", bmp.Width, bmp.Height, jpgBytes.Length));
+                            bw.Write(jpgBytes);
+                            bw.Write(System.Text.Encoding.ASCII.GetBytes("\nendstream\nendobj\n"));
+                            string content = string.Format("q\n{0} 0 0 {1} {2} {3} cm /Im0 Do\nQ\n", imgWpt, imgHpt, imgX, imgY);
+                            writeObj(string.Format("5 0 obj<< /Length {0} >>stream\n{1}endstream\nendobj\n", content.Length, content));
+                            long xrefPos = fs.Position;
+                            bw.Write(System.Text.Encoding.ASCII.GetBytes("xref\n0 6\n0000000000 65535 f \n"));
+                            for (int i = 0; i < offsets.Count; i++)
+                                bw.Write(System.Text.Encoding.ASCII.GetBytes(offsets[i].ToString("D10") + " 00000 n \n"));
+                            bw.Write(System.Text.Encoding.ASCII.GetBytes("trailer<< /Size 6 /Root 1 0 R >>\nstartxref\n" + xrefPos + "\n%%EOF\n"));
+                        }
+                        MessageBox.Show("PDF exported to:\n" + sfd.FileName, "Export", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
-                _printBitmap = CreateChartBitmap();
-                PrintDocument pd = new PrintDocument { DocumentName = "Statistics Chart" };
-                pd.PrintPage += (s, args) => { if (_printBitmap == null) return; Rectangle m = args.MarginBounds; float scale = Math.Min((float)m.Width / _printBitmap.Width, (float)m.Height / _printBitmap.Height); int w = (int)(_printBitmap.Width * scale); int h = (int)(_printBitmap.Height * scale); int x = m.Left + (m.Width - w) / 2; int y = m.Top + (m.Height - h) / 2; args.Graphics.DrawImage(_printBitmap, new Rectangle(x, y, w, h)); args.HasMorePages = false; };
-                pd.EndPrint += (s, args) => { if (_printBitmap != null) { _printBitmap.Dispose(); _printBitmap = null; } };
-                using (var preview = new PrintPreviewDialog { Document = pd, Width = 1000, Height = 800 })
-                {
-                    preview.ShowDialog(this);
-                }
-            } catch (Exception ex) { MessageBox.Show("Failed to print chart: " + ex.Message, "Print", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            } catch (Exception ex) { MessageBox.Show("Failed to export PDF: " + ex.Message, "Export", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
     }
 }

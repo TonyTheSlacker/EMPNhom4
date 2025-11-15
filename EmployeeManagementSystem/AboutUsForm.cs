@@ -7,7 +7,6 @@ namespace EmployeeManagementSystem {
     public partial class AboutUsForm : Form {
         public AboutUsForm() {
             InitializeComponent();
-            // Build5 cards at runtime (keeps designer clean)
             AddMember("Châu Hoàn Thiện", "49.01.103.077", "Database, UI design, Form design");
             AddMember("Đặng Minh Phúc", "49.01.103.065", "Form design, Testing");
             AddMember("Trần Minh Mẫn", "49.01.103.049", "Report Document, Presentation");
@@ -48,9 +47,9 @@ namespace EmployeeManagementSystem {
                 Font = new Font("Century Gothic", 10.0f, FontStyle.Bold),
                 ForeColor = Color.DarkOrange,
                 AutoSize = true,
-                MaximumSize = new Size(card.Width - 16, 0), // wrap within card
+                MaximumSize = new Size(card.Width - 16, 0),
                 Location = new Point(8, y),
-                Padding = new Padding(0, 2, 0, 0), // avoid ascender clipping
+                Padding = new Padding(0, 2, 0, 0),
                 UseCompatibleTextRendering = true
             };
             card.Controls.Add(lblName);

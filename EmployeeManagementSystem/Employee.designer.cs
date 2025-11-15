@@ -45,7 +45,7 @@ namespace EmployeeManagementSystem
     #endregion
 		
 		public EmployeeDataContext() : 
-				base(global::EmployeeManagementSystem.Properties.Settings.Default.QLNHANVIENConnectionString, mappingSource)
+				base(global::EmployeeManagementSystem.Properties.Settings.Default.EmployeeManagementSystemConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

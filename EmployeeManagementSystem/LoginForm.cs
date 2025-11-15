@@ -52,7 +52,7 @@ namespace EmployeeManagementSystem {
             try
             {
                 string hashed = Hashpassword(password);
-                string baseConn = Properties.Settings.Default.QLNHANVIENConnectionString ?? string.Empty;
+                string baseConn = Properties.Settings.Default.EmployeeManagementSystemConnectionString ?? string.Empty;
                 string conn = EnsureShortTimeout(baseConn,5); // seconds
 
                 var account = await Task.Run(() =>

@@ -2353,7 +2353,7 @@ namespace EmployeeManagementSystem.QLNHANVIENDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::EmployeeManagementSystem.Properties.Settings.Default.QLNHANVIENConnectionString;
+            this._connection.ConnectionString = global::EmployeeManagementSystem.Properties.Settings.Default.EmployeeManagementSystemConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2695,7 +2695,7 @@ namespace EmployeeManagementSystem.QLNHANVIENDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::EmployeeManagementSystem.Properties.Settings.Default.QLNHANVIENConnectionString;
+            this._connection.ConnectionString = global::EmployeeManagementSystem.Properties.Settings.Default.EmployeeManagementSystemConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3036,7 +3036,7 @@ SELECT EmpID, EmpName, EmpGen, EmpDep, EmpDOB, EmpJDate, EmpSal FROM Employee WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::EmployeeManagementSystem.Properties.Settings.Default.QLNHANVIENConnectionString;
+            this._connection.ConnectionString = global::EmployeeManagementSystem.Properties.Settings.Default.EmployeeManagementSystemConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3430,7 +3430,7 @@ SELECT Scode, EmployeeID, Period, Salary, Paydate, EmployeeName, [From], [To], t
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::EmployeeManagementSystem.Properties.Settings.Default.QLNHANVIENConnectionString;
+            this._connection.ConnectionString = global::EmployeeManagementSystem.Properties.Settings.Default.EmployeeManagementSystemConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
