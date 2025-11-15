@@ -1,0 +1,308 @@
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\QLNHANVIENFULL.exe.config
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\QLNHANVIENFULL.exe
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\QLNHANVIENFULL.pdb
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.AssemblyReference.cache
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.SuggestedBindingRedirects.cache
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.Form1.resources
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.Properties.Resources.resources
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.GenerateResource.cache
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.CoreCompileInputs.cache
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.exe
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.pdb
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.EmployeeForm.resources
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.DepartmentForm.resources
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.SalaryForm.resources
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.LoginForm.resources
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.AccountForm.resources
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\EnvDTE.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\stdole.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.ReportForm.resources
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.CopyComplete
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateEmployeeForm.resources
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateSalaryForm.resources
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateDepartmentForm.resources
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateAccountForm.resources
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.ForgetPasswordForm.resources
+C:\Users\MSI VN\Desktop\Đồ Án\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.IntroForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\QLNHANVIENFULL.exe.config
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\QLNHANVIENFULL.exe
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\QLNHANVIENFULL.pdb
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\EnvDTE.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\stdole.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.AssemblyReference.cache
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.AboutUsForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.AccountForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.DepartmentForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.EmployeeForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.ForgetPasswordForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.Form1.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.IntroForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.LoginForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.Properties.Resources.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.ReportForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.SalaryForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.StatisticsChartForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateAccountForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateDepartmentForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateEmployeeForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateSalaryForm.resources
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.GenerateResource.cache
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.CoreCompileInputs.cache
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVI.B82548A2.Up2Date
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.exe
+C:\Users\hoanh\Documents\QLNHANVIENFULL\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.pdb
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\QLNHANVIENFULL.exe.config
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\QLNHANVIENFULL.exe
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\QLNHANVIENFULL.pdb
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\EnvDTE.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\stdole.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.AssemblyReference.cache
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.AboutUsForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.AccountForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.DepartmentForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.EmployeeForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.ForgetPasswordForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.Form1.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.IntroForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.LoginForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.Properties.Resources.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.ReportForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.SalaryForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.StatisticsChartForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateAccountForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateDepartmentForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateEmployeeForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateSalaryForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.GenerateResource.cache
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.CoreCompileInputs.cache
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVI.B82548A2.Up2Date
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.exe
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.pdb
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\QLNHANVIENFULL\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.exe.config
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\QLNHANVIENFULL.exe.config
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\QLNHANVIENFULL.exe
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\QLNHANVIENFULL.pdb
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\EnvDTE.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\stdole.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.AssemblyReference.cache
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.AboutUsForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.AccountForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.DepartmentForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.EmployeeForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.ForgetPasswordForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.Form1.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.IntroForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.LoginForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.Properties.Resources.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.ReportForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.SalaryForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.StatisticsChartForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateAccountForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateDepartmentForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateEmployeeForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.UpdateSalaryForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.GenerateResource.cache
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.csproj.CoreCompileInputs.cache
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVI.B82548A2.Up2Date
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.exe
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\QLNHANVIENFULL.pdb

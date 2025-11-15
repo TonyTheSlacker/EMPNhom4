@@ -1,0 +1,166 @@
+﻿using System;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
+
+namespace QLNHANVIENFULL {
+    public partial class UpdateSalaryForm : Form {
+
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        Salary salary = null;
+        public UpdateSalaryForm(Salary sal = null) {
+            salary = sal;
+            InitializeComponent();
+        }
+        EmployeeDataContext db = new EmployeeDataContext();
+        private void LoadEmployee() {
+            // Bind by Employee ID so user can search/type IDs
+            cbbEmployee.Items.Clear();
+            cbbEmployee.DataSource = db.Employees;
+            cbbEmployee.DisplayMember = "EmpId"; // visible text will be the ID
+            cbbEmployee.ValueMember = "EmpId"; // selected value is also the ID
+            cbbEmployee.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbEmployee.AutoCompleteSource = AutoCompleteSource.ListItems;
+
+            // Bind fullname list for optional selection
+            cbbEmpName.Items.Clear();
+            cbbEmpName.DataSource = db.Employees;
+            cbbEmpName.DisplayMember = "EmpName";
+            cbbEmpName.ValueMember = "EmpId"; // same value (EmpId) so both stay in sync
+            cbbEmpName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbbEmpName.AutoCompleteSource = AutoCompleteSource.ListItems;
+
+            // Sync selections both ways
+            cbbEmployee.SelectedIndexChanged -= cbbEmployee_SelectedIndexChanged;
+            cbbEmpName.SelectedIndexChanged -= cbbEmpName_SelectedIndexChanged;
+            cbbEmployee.SelectedIndexChanged += cbbEmployee_SelectedIndexChanged;
+            cbbEmpName.SelectedIndexChanged += cbbEmpName_SelectedIndexChanged;
+        }
+
+        private void cbbEmployee_SelectedIndexChanged(object sender, EventArgs e) {
+            if (cbbEmployee.SelectedValue != null && cbbEmpName.ValueMember == "EmpId")
+            {
+                cbbEmpName.SelectedValue = cbbEmployee.SelectedValue;
+            }
+        }
+        private void cbbEmpName_SelectedIndexChanged(object sender, EventArgs e) {
+            if (cbbEmpName.SelectedValue != null && cbbEmployee.ValueMember == "EmpId")
+            {
+                cbbEmployee.SelectedValue = cbbEmpName.SelectedValue;
+            }
+        }
+
+        private void ptbClose_Click(object sender, EventArgs e) {
+            this.Dispose();
+        }
+
+        private void UpdateSalaryForm_Load(object sender, EventArgs e) {
+            LoadEmployee();
+            if (salary != null)
+            {
+                txtSalary.Text = salary.Salary1.ToString();
+                // Select by EmployeeID
+                try
+                {
+                    cbbEmployee.SelectedValue = salary.EmployeeID;
+                    cbbEmpName.SelectedValue = salary.EmployeeID;
+                } catch { }
+
+                dtpkFrom.Text = salary.From.ToString();
+                dtpkTo.Text = salary.To.ToString();
+                dtpkPayDate.Text = salary.Paydate.ToString();
+
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e) {
+            if (string.IsNullOrEmpty(cbbEmployee.Text) || string.IsNullOrEmpty(txtSalary.Text) || string.IsNullOrEmpty(cbbEmployee.Text))
+            {
+                MessageBox.Show("Miss data", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            int empId = int.Parse(cbbEmployee.SelectedValue.ToString());
+            // Check existence by EmployeeID (unique)
+            Salary sala = db.Salaries.SingleOrDefault(m => m.EmployeeID == empId);
+            if (sala != null)
+            {
+                MessageBox.Show("Employee existed in this salary list", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            } else
+            {
+                Salary sal = new Salary();
+                Employee epl = db.Employees.SingleOrDefault(emp => emp.EmpID == empId);
+                sal.EmployeeID = empId;
+                // Keep EmployeeName for display but derive from DB
+                sal.EmployeeName = epl != null ? epl.EmpName : string.Empty;
+
+                sal.Period = (dtpkTo.Value.Day - dtpkFrom.Value.Day) + Math.Abs(dtpkTo.Value.Month - dtpkFrom.Value.Month) * 30 + Math.Abs(dtpkTo.Value.Year - dtpkFrom.Value.Year) * 12 * 30;
+                sal.Paydate = dtpkPayDate.Value;
+                sal.From = dtpkFrom.Value;
+                sal.To = dtpkTo.Value;
+                int parsedSal;
+                if (int.TryParse(txtSalary.Text, out parsedSal))
+                {
+                    sal.Salary1 = parsedSal;
+                } else if (epl != null)
+                {
+                    sal.Salary1 = epl.EmpSal;
+                } else
+                {
+                    sal.Salary1 = 0;
+                }
+                sal.totalsal = sal.Salary1 * sal.Period;
+                db.Salaries.InsertOnSubmit(sal);
+                db.SubmitChanges();
+                MessageBox.Show("Inserted Sucessfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Dispose();
+
+            }
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e) {
+            Salary tmp = db.Salaries.SingleOrDefault(m => m.Scode == salary.Scode);
+            int empId = int.Parse(cbbEmployee.SelectedValue.ToString());
+            tmp.EmployeeID = empId;
+            int salNumber;
+            if (int.TryParse(txtSalary.Text, out salNumber))
+                tmp.Salary1 = salNumber;
+            // keep EmployeeName aligned with selected ID
+            Employee epl = db.Employees.SingleOrDefault(emp => emp.EmpID == empId);
+            tmp.EmployeeName = epl != null ? epl.EmpName : string.Empty;
+            tmp.From = dtpkFrom.Value;
+            tmp.To = dtpkTo.Value;
+            tmp.Paydate = dtpkPayDate.Value;
+            tmp.Period = (dtpkTo.Value.Day - dtpkFrom.Value.Day) + Math.Abs(dtpkTo.Value.Month - dtpkFrom.Value.Month) * 30 + Math.Abs(dtpkTo.Value.Year - dtpkFrom.Value.Year) * 12 * 30;
+            tmp.totalsal = tmp.Salary1 * tmp.Period;
+            db.SubmitChanges();
+            MessageBox.Show("Updated Sucessfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Dispose();
+        }
+
+        private void pnltop_MouseDown(object sender, MouseEventArgs e) {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e) {
+
+        }
+
+        private void dtpkPayDate_ValueChanged(object sender, EventArgs e) {
+
+        }
+    }
+}

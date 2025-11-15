@@ -1,0 +1,91 @@
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace QLNHANVIENFULL {
+    public class AboutUsForm : Form {
+        public AboutUsForm() {
+            this.Text = "About Us";
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterParent;
+            this.ClientSize = new Size(700, 500);
+            this.BackColor = Color.WhiteSmoke;
+
+            var title = new Label
+            {
+                Text = "Project Team",
+                Font = new Font("Century Gothic", 18, FontStyle.Bold),
+                ForeColor = Color.DarkOrange,
+                AutoSize = false,
+                TextAlign = ContentAlignment.MiddleCenter,
+                Dock = DockStyle.Top,
+                Height = 60
+            };
+            Controls.Add(title);
+
+            var panel = new TableLayoutPanel
+            {
+                Dock = DockStyle.Fill,
+                ColumnCount = 1,
+                RowCount = 6,
+                Padding = new Padding(20),
+                AutoScroll = true
+            };
+            Controls.Add(panel);
+
+            panel.Controls.Add(BuildSlot("Member1", "123456", "Database, UI design"));
+            panel.Controls.Add(BuildSlot("Member2", "234567", "Business logic"));
+            panel.Controls.Add(BuildSlot("Member3", "345678", "Testing, documentation"));
+            panel.Controls.Add(BuildSlot("Member4", "456789", "Reporting module"));
+            panel.Controls.Add(BuildSlot("Member5", "567890", "Security & encryption"));
+
+            var closeBtn = new Button
+            {
+                Text = "Close",
+                Font = new Font("Century Gothic", 10, FontStyle.Bold),
+                ForeColor = Color.DarkOrange,
+                Dock = DockStyle.Bottom,
+                Height = 45
+            };
+            closeBtn.Click += (s, e) => this.Close();
+            Controls.Add(closeBtn);
+        }
+
+        private Control BuildSlot(string fullName, string studentId, string contribution) {
+            var grp = new GroupBox
+            {
+                Text = fullName,
+                Font = new Font("Century Gothic", 10, FontStyle.Bold),
+                ForeColor = Color.DarkOrange,
+                Dock = DockStyle.Top,
+                Height = 110
+            };
+            var lblId = new Label
+            {
+                Text = "Student ID: " + studentId,
+                Location = new Point(10, 30),
+                AutoSize = true
+            };
+            var lblContribution = new Label
+            {
+                Text = "Contribution: " + contribution,
+                Location = new Point(10, 60),
+                AutoSize = true
+            };
+            grp.Controls.Add(lblId);
+            grp.Controls.Add(lblContribution);
+            return grp;
+        }
+
+        private void InitializeComponent() {
+            this.SuspendLayout();
+            // 
+            // AboutUsForm
+            // 
+            this.ClientSize = new System.Drawing.Size(1048, 712);
+            this.Name = "AboutUsForm";
+            this.ResumeLayout(false);
+
+        }
+    }
+}

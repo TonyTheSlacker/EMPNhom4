@@ -1,0 +1,233 @@
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\EmployeeManagementSystem.exe.config
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\EmployeeManagementSystem.exe
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\EmployeeManagementSystem.pdb
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\EnvDTE.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\stdole.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.csproj.AssemblyReference.cache
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.AboutUsForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.AccountForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.DepartmentForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.EmployeeForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.ForgetPasswordForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.Form1.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.IntroForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.LoginForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.Properties.Resources.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.ReportForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.SalaryForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.StatisticsChartForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.UpdateAccountForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.UpdateDepartmentForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.UpdateEmployeeForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.UpdateSalaryForm.resources
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.csproj.GenerateResource.cache
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\Employee.A4622930.Up2Date
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.exe
+C:\Users\hoanh\Documents\EMPLOYEE MANAGEMENT SYSTEM\EMP\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.pdb
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\EmployeeManagementSystem.exe.config
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\EmployeeManagementSystem.exe
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\EmployeeManagementSystem.pdb
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\EnvDTE.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\stdole.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.csproj.AssemblyReference.cache
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.exe.config
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.AboutUsForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.AccountForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.DepartmentForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.EmployeeForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.ForgetPasswordForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.Form1.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.IntroForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.LoginForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.Properties.Resources.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.ReportForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.SalaryForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.StatisticsChartForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.UpdateAccountForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.UpdateDepartmentForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.UpdateEmployeeForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.UpdateSalaryForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.csproj.GenerateResource.cache
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\Employee.A4622930.Up2Date
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.exe
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\QLNHANVIENFULL\obj\Debug\EmployeeManagementSystem.pdb
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\EmployeeManagementSystem.exe.config
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\EmployeeManagementSystem.exe
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\EmployeeManagementSystem.pdb
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\EnvDTE.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\stdole.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.csproj.AssemblyReference.cache
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.AboutUsForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.AccountForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.DepartmentForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.EmployeeForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.ForgetPasswordForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.Form1.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.IntroForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.LoginForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.Properties.Resources.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.ReportForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.SalaryForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.StatisticsChartForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.UpdateAccountForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.UpdateDepartmentForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.UpdateEmployeeForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.UpdateSalaryForm.resources
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.csproj.GenerateResource.cache
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\Employee.A4622930.Up2Date
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.exe
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.pdb
+C:\Users\hoanh\Documents\EmployeeManagementSystem\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.exe.config

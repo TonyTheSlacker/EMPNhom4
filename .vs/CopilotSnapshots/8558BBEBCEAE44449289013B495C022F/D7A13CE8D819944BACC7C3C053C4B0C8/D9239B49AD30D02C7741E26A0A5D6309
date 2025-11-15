@@ -1,0 +1,244 @@
+﻿namespace QLNHANVIENFULL
+{
+ partial class StatisticsChartForm
+ {
+ // Required designer variable
+ private System.ComponentModel.IContainer components = null;
+ // Core controls previously missing declarations
+ private System.Windows.Forms.Panel panelTop;
+ private System.Windows.Forms.ComboBox cboMode;
+ private System.Windows.Forms.Label lblTitle;
+ private System.Windows.Forms.Panel canvas;
+ // Added feature controls
+ private System.Windows.Forms.Button btnPrint; // keep
+ private System.Windows.Forms.Button btnExportImage; // keep
+ private System.Windows.Forms.ComboBox cboEmployee; // new - employee selector
+ private System.Windows.Forms.CheckBox chkRange; // new - toggle date range
+ private System.Windows.Forms.DateTimePicker dtFrom; // new
+ private System.Windows.Forms.DateTimePicker dtTo; // new
+ private System.Windows.Forms.Label lblEmp; // new
+ private System.Windows.Forms.Label lblFrom; // new
+ private System.Windows.Forms.Label lblTo; // new
+
+ protected override void Dispose(bool disposing)
+ {
+ if (disposing && (components != null)) components.Dispose();
+ base.Dispose(disposing);
+ }
+
+ #region Windows Form Designer generated code
+ private void InitializeComponent()
+ {
+ this.panelTop = new System.Windows.Forms.Panel();
+ this.btnExportImage = new System.Windows.Forms.Button();
+ this.btnPrint = new System.Windows.Forms.Button();
+ this.cboMode = new System.Windows.Forms.ComboBox();
+ this.lblTitle = new System.Windows.Forms.Label();
+ this.lblEmp = new System.Windows.Forms.Label();
+ this.cboEmployee = new System.Windows.Forms.ComboBox();
+ this.chkRange = new System.Windows.Forms.CheckBox();
+ this.lblFrom = new System.Windows.Forms.Label();
+ this.dtFrom = new System.Windows.Forms.DateTimePicker();
+ this.lblTo = new System.Windows.Forms.Label();
+ this.dtTo = new System.Windows.Forms.DateTimePicker();
+ this.canvas = new System.Windows.Forms.Panel();
+ this.panelTop.SuspendLayout();
+ this.SuspendLayout();
+ // 
+ // panelTop
+ // 
+ this.panelTop.BackColor = System.Drawing.Color.DarkOrange;
+ this.panelTop.Controls.Add(this.dtTo);
+ this.panelTop.Controls.Add(this.lblTo);
+ this.panelTop.Controls.Add(this.dtFrom);
+ this.panelTop.Controls.Add(this.lblFrom);
+ this.panelTop.Controls.Add(this.chkRange);
+ this.panelTop.Controls.Add(this.cboEmployee);
+ this.panelTop.Controls.Add(this.lblEmp);
+ this.panelTop.Controls.Add(this.btnExportImage);
+ this.panelTop.Controls.Add(this.btnPrint);
+ this.panelTop.Controls.Add(this.cboMode);
+ this.panelTop.Controls.Add(this.lblTitle);
+ this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+ this.panelTop.Location = new System.Drawing.Point(0,0);
+ this.panelTop.Margin = new System.Windows.Forms.Padding(4);
+ this.panelTop.Name = "panelTop";
+ this.panelTop.Size = new System.Drawing.Size(1707,115);
+ this.panelTop.TabIndex =0;
+ // 
+ // btnExportImage
+ // 
+ this.btnExportImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+ this.btnExportImage.BackColor = System.Drawing.Color.WhiteSmoke;
+ this.btnExportImage.FlatAppearance.BorderSize =0;
+ this.btnExportImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+ this.btnExportImage.Font = new System.Drawing.Font("Century Gothic",12F, System.Drawing.FontStyle.Bold);
+ this.btnExportImage.ForeColor = System.Drawing.Color.DarkOrange;
+ this.btnExportImage.Location = new System.Drawing.Point(1531,29);
+ this.btnExportImage.Margin = new System.Windows.Forms.Padding(4);
+ this.btnExportImage.Name = "btnExportImage";
+ this.btnExportImage.Size = new System.Drawing.Size(126,53);
+ this.btnExportImage.TabIndex =9;
+ this.btnExportImage.Text = "Export";
+ this.btnExportImage.UseVisualStyleBackColor = false;
+ this.btnExportImage.Click += new System.EventHandler(this.btnExportImage_Click);
+ // 
+ // btnPrint
+ // 
+ this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+ this.btnPrint.BackColor = System.Drawing.Color.WhiteSmoke;
+ this.btnPrint.FlatAppearance.BorderSize =0;
+ this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+ this.btnPrint.Font = new System.Drawing.Font("Century Gothic",12F, System.Drawing.FontStyle.Bold);
+ this.btnPrint.ForeColor = System.Drawing.Color.DarkOrange;
+ this.btnPrint.Location = new System.Drawing.Point(1403,29);
+ this.btnPrint.Margin = new System.Windows.Forms.Padding(4);
+ this.btnPrint.Name = "btnPrint";
+ this.btnPrint.Size = new System.Drawing.Size(120,53);
+ this.btnPrint.TabIndex =8;
+ this.btnPrint.Text = "Print";
+ this.btnPrint.UseVisualStyleBackColor = false;
+ this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+ // 
+ // cboMode
+ // 
+ this.cboMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+ this.cboMode.Font = new System.Drawing.Font("Century Gothic",9F);
+ this.cboMode.FormattingEnabled = true;
+ this.cboMode.Items.AddRange(new object[] {
+ "Salary by Department (Bar)",
+ "Total Salary by Month (Line)",
+ "Employee Earnings by Month (Line)"});
+ this.cboMode.Location = new System.Drawing.Point(470,40);
+ this.cboMode.Margin = new System.Windows.Forms.Padding(4);
+ this.cboMode.Name = "cboMode";
+ this.cboMode.Size = new System.Drawing.Size(399,38);
+ this.cboMode.TabIndex =2;
+ this.cboMode.SelectedIndexChanged += new System.EventHandler(this.cboMode_SelectedIndexChanged);
+ // 
+ // lblTitle
+ // 
+ this.lblTitle.AutoSize = true;
+ this.lblTitle.Font = new System.Drawing.Font("Century Gothic",14F, System.Drawing.FontStyle.Bold);
+ this.lblTitle.ForeColor = System.Drawing.Color.White;
+ this.lblTitle.Location = new System.Drawing.Point(36,38);
+ this.lblTitle.Margin = new System.Windows.Forms.Padding(4,0,4,0);
+ this.lblTitle.Name = "lblTitle";
+ this.lblTitle.Size = new System.Drawing.Size(337,44);
+ this.lblTitle.TabIndex =1;
+ this.lblTitle.Text = "Statistics && Charts";
+ // 
+ // lblEmp
+ // 
+ this.lblEmp.AutoSize = true;
+ this.lblEmp.Font = new System.Drawing.Font("Century Gothic",9F);
+ this.lblEmp.ForeColor = System.Drawing.Color.White;
+ this.lblEmp.Location = new System.Drawing.Point(896,18);
+ this.lblEmp.Name = "lblEmp";
+ this.lblEmp.Size = new System.Drawing.Size(131,30);
+ this.lblEmp.TabIndex =10;
+ this.lblEmp.Text = "Employee";
+ this.lblEmp.Visible = false;
+ // 
+ // cboEmployee
+ // 
+ this.cboEmployee.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+ this.cboEmployee.Font = new System.Drawing.Font("Century Gothic",9F);
+ this.cboEmployee.Location = new System.Drawing.Point(900,50);
+ this.cboEmployee.Name = "cboEmployee";
+ this.cboEmployee.Size = new System.Drawing.Size(240,38);
+ this.cboEmployee.TabIndex =11;
+ this.cboEmployee.Visible = false;
+ this.cboEmployee.SelectedIndexChanged += new System.EventHandler(this.cboEmployee_SelectedIndexChanged);
+ // 
+ // chkRange
+ // 
+ this.chkRange.AutoSize = true;
+ this.chkRange.Font = new System.Drawing.Font("Century Gothic",9F);
+ this.chkRange.ForeColor = System.Drawing.Color.White;
+ this.chkRange.Location = new System.Drawing.Point(1150,18);
+ this.chkRange.Name = "chkRange";
+ this.chkRange.Size = new System.Drawing.Size(117,34);
+ this.chkRange.TabIndex =12;
+ this.chkRange.Text = "Range";
+ this.chkRange.UseVisualStyleBackColor = true;
+ this.chkRange.Visible = false;
+ this.chkRange.CheckedChanged += new System.EventHandler(this.chkRange_CheckedChanged);
+ // 
+ // lblFrom
+ // 
+ this.lblFrom.AutoSize = true;
+ this.lblFrom.Font = new System.Drawing.Font("Century Gothic",9F);
+ this.lblFrom.ForeColor = System.Drawing.Color.White;
+ this.lblFrom.Location = new System.Drawing.Point(1146,55);
+ this.lblFrom.Name = "lblFrom";
+ this.lblFrom.Size = new System.Drawing.Size(75,30);
+ this.lblFrom.TabIndex =13;
+ this.lblFrom.Text = "From";
+ this.lblFrom.Visible = false;
+ // 
+ // dtFrom
+ // 
+ this.dtFrom.CustomFormat = "dd/MM/yyyy";
+ this.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+ this.dtFrom.Location = new System.Drawing.Point(1224,50);
+ this.dtFrom.Name = "dtFrom";
+ this.dtFrom.Size = new System.Drawing.Size(160,31);
+ this.dtFrom.TabIndex =14;
+ this.dtFrom.Visible = false;
+ this.dtFrom.ValueChanged += new System.EventHandler(this.dtFrom_ValueChanged);
+ // 
+ // lblTo
+ // 
+ this.lblTo.AutoSize = true;
+ this.lblTo.Font = new System.Drawing.Font("Century Gothic",9F);
+ this.lblTo.ForeColor = System.Drawing.Color.White;
+ this.lblTo.Location = new System.Drawing.Point(1388,55);
+ this.lblTo.Name = "lblTo";
+ this.lblTo.Size = new System.Drawing.Size(43,30);
+ this.lblTo.TabIndex =15;
+ this.lblTo.Text = "To";
+ this.lblTo.Visible = false;
+ // 
+ // dtTo
+ // 
+ this.dtTo.CustomFormat = "dd/MM/yyyy";
+ this.dtTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+ this.dtTo.Location = new System.Drawing.Point(1437,50);
+ this.dtTo.Name = "dtTo";
+ this.dtTo.Size = new System.Drawing.Size(160,31);
+ this.dtTo.TabIndex =16;
+ this.dtTo.Visible = false;
+ this.dtTo.ValueChanged += new System.EventHandler(this.dtTo_ValueChanged);
+ // 
+ // canvas
+ // 
+ this.canvas.BackColor = System.Drawing.Color.White;
+ this.canvas.Dock = System.Windows.Forms.DockStyle.Fill;
+ this.canvas.Location = new System.Drawing.Point(0,115);
+ this.canvas.Margin = new System.Windows.Forms.Padding(4);
+ this.canvas.Name = "canvas";
+ this.canvas.Size = new System.Drawing.Size(1707,885);
+ this.canvas.TabIndex =4;
+ this.canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.canvas_Paint);
+ this.canvas.Resize += new System.EventHandler(this.canvas_Resize);
+ // 
+ // StatisticsChartForm
+ // 
+ this.AutoScaleDimensions = new System.Drawing.SizeF(12F,25F);
+ this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+ this.ClientSize = new System.Drawing.Size(1707,1000);
+ this.Controls.Add(this.canvas);
+ this.Controls.Add(this.panelTop);
+ this.Margin = new System.Windows.Forms.Padding(4);
+ this.Name = "StatisticsChartForm";
+ this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+ this.Text = "Statistics & Charts";
+ this.Load += new System.EventHandler(this.StatisticsChartForm_Load);
+ this.panelTop.ResumeLayout(false);
+ this.panelTop.PerformLayout();
+ this.ResumeLayout(false);
+ }
+ #endregion
+ }
+}

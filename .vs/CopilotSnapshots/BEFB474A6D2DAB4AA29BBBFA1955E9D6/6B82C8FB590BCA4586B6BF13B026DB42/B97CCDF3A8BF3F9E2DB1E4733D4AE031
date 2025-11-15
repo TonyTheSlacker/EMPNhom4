@@ -1,0 +1,160 @@
+﻿using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+
+namespace QLNHANVIENFULL {
+    public class AboutUsForm : Form {
+        public AboutUsForm() {
+            this.Text = "About Us";
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterParent;
+            this.ClientSize = new Size(700, 500);
+            this.BackColor = Color.WhiteSmoke;
+
+            var title = new Label
+            {
+                Text = "Project Team",
+                Font = new Font("Century Gothic", 18, FontStyle.Bold),
+                ForeColor = Color.DarkOrange,
+                AutoSize = false,
+                TextAlign = ContentAlignment.MiddleCenter,
+                Dock = DockStyle.Top,
+                Height = 60
+            };
+            Controls.Add(title);
+
+            var panel = new TableLayoutPanel
+            {
+                Dock = DockStyle.Fill,
+                ColumnCount = 1,
+                RowCount = 6,
+                Padding = new Padding(20),
+                AutoScroll = true
+            };
+            Controls.Add(panel);
+
+            panel.Controls.Add(BuildSlot("Member1", "123456", "Database, UI design"));
+            panel.Controls.Add(BuildSlot("Member2", "234567", "Business logic"));
+            panel.Controls.Add(BuildSlot("Member3", "345678", "Testing, documentation"));
+            panel.Controls.Add(BuildSlot("Member4", "456789", "Reporting module"));
+            panel.Controls.Add(BuildSlot("Member5", "567890", "Security & encryption"));
+
+            var closeBtn = new Button
+            {
+                Text = "Close",
+                Font = new Font("Century Gothic", 10, FontStyle.Bold),
+                ForeColor = Color.DarkOrange,
+                Dock = DockStyle.Bottom,
+                Height = 45
+            };
+            closeBtn.Click += (s, e) => this.Close();
+            Controls.Add(closeBtn);
+        }
+
+        private Control BuildSlot(string fullName, string studentId, string contribution) {
+            var grp = new GroupBox
+            {
+                Text = fullName,
+                Font = new Font("Century Gothic", 10, FontStyle.Bold),
+                ForeColor = Color.DarkOrange,
+                Dock = DockStyle.Top,
+                Height = 220
+            };
+
+            // vertical layout: picture on top, info below
+            var layout = new TableLayoutPanel
+            {
+                Dock = DockStyle.Fill,
+                ColumnCount = 1,
+                RowCount = 2,
+                Padding = new Padding(8)
+            };
+            layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 110F));
+            layout.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+
+            // picture panel (center the picture)
+            var picPanel = new Panel { Dock = DockStyle.Fill };
+            var pic = new PictureBox
+            {
+                Size = new Size(90, 90),
+                SizeMode = PictureBoxSizeMode.Zoom,
+                BackColor = Color.Gainsboro,
+                BorderStyle = BorderStyle.FixedSingle,
+                Image = CreateAvatar(fullName)
+            };
+            picPanel.Controls.Add(pic);
+            picPanel.Resize += (s, e) =>
+            {
+                pic.Location = new Point((picPanel.Width - pic.Width) / 2, (picPanel.Height - pic.Height) / 2);
+            };
+            // initial center
+            pic.Location = new Point((picPanel.Width - pic.Width) / 2, (picPanel.Height - pic.Height) / 2);
+
+            // info area
+            var infoPanel = new Panel { Dock = DockStyle.Fill };
+            var lblName = new Label
+            {
+                Text = "Full Name: " + fullName,
+                Location = new Point(10, 5),
+                AutoSize = true,
+                ForeColor = Color.DarkOrange
+            };
+            var lblId = new Label
+            {
+                Text = "Student ID: " + studentId,
+                Location = new Point(10, 30),
+                AutoSize = true,
+                ForeColor = Color.DarkOrange
+            };
+            var lblContribution = new Label
+            {
+                Text = "Contribution: " + contribution,
+                Location = new Point(10, 55),
+                AutoSize = true,
+                ForeColor = Color.DarkOrange
+            };
+            infoPanel.Controls.Add(lblName);
+            infoPanel.Controls.Add(lblId);
+            infoPanel.Controls.Add(lblContribution);
+
+            layout.Controls.Add(picPanel, 0, 0);
+            layout.Controls.Add(infoPanel, 0, 1);
+            grp.Controls.Add(layout);
+            return grp;
+        }
+
+        private Image CreateAvatar(string name)
+        {
+            int size = 90;
+            var bmp = new Bitmap(size, size);
+            using (var g = Graphics.FromImage(bmp))
+            {
+                g.SmoothingMode = SmoothingMode.AntiAlias;
+                g.Clear(Color.WhiteSmoke);
+                var rect = new Rectangle(0, 0, size - 1, size - 1);
+                using (var brush = new SolidBrush(Color.Gainsboro)) g.FillEllipse(brush, rect);
+                using (var pen = new Pen(Color.DarkOrange, 3)) g.DrawEllipse(pen, rect);
+                string text = string.IsNullOrEmpty(name) ? "?" : char.ToUpper(name[0]).ToString();
+                using (var f = new Font("Century Gothic", 28, FontStyle.Bold))
+                using (var txtBrush = new SolidBrush(Color.DarkOrange))
+                {
+                    var sz = g.MeasureString(text, f);
+                    g.DrawString(text, f, txtBrush, (size - sz.Width) / 2, (size - sz.Height) / 2);
+                }
+            }
+            return bmp;
+        }
+
+        private void InitializeComponent() {
+            this.SuspendLayout();
+            // 
+            // AboutUsForm
+            // 
+            this.ClientSize = new System.Drawing.Size(1048, 712);
+            this.Name = "AboutUsForm";
+            this.ResumeLayout(false);
+
+        }
+    }
+}

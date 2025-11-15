@@ -1,0 +1,318 @@
+﻿namespace QLNHANVIENFULL
+{
+partial class StatisticsChartForm
+{
+private System.ComponentModel.IContainer components = null;
+private System.Windows.Forms.Panel panelTop;
+private System.Windows.Forms.TableLayoutPanel tblTop; // container
+private System.Windows.Forms.TableLayoutPanel headerRow; // title + actions
+private System.Windows.Forms.TableLayoutPanel filterRow; // filters
+private System.Windows.Forms.Label lblTitle;
+private System.Windows.Forms.Label lblMode;
+private System.Windows.Forms.ComboBox cboMode;
+private System.Windows.Forms.Label lblEmp;
+private System.Windows.Forms.ComboBox cboEmployee;
+private System.Windows.Forms.CheckBox chkRange;
+private System.Windows.Forms.Label lblFrom;
+private System.Windows.Forms.DateTimePicker dtFrom;
+private System.Windows.Forms.Label lblTo;
+private System.Windows.Forms.DateTimePicker dtTo;
+private System.Windows.Forms.Button btnPrint;
+private System.Windows.Forms.Button btnExportImage;
+private System.Windows.Forms.Panel canvas;
+
+protected override void Dispose(bool disposing)
+{
+if (disposing && (components != null)) components.Dispose();
+base.Dispose(disposing);
+}
+
+#region Windows Form Designer generated code
+private void InitializeComponent()
+{
+this.panelTop = new System.Windows.Forms.Panel();
+this.tblTop = new System.Windows.Forms.TableLayoutPanel();
+this.headerRow = new System.Windows.Forms.TableLayoutPanel();
+this.lblTitle = new System.Windows.Forms.Label();
+this.btnPrint = new System.Windows.Forms.Button();
+this.btnExportImage = new System.Windows.Forms.Button();
+this.filterRow = new System.Windows.Forms.TableLayoutPanel();
+this.lblMode = new System.Windows.Forms.Label();
+this.cboMode = new System.Windows.Forms.ComboBox();
+this.lblEmp = new System.Windows.Forms.Label();
+this.cboEmployee = new System.Windows.Forms.ComboBox();
+this.chkRange = new System.Windows.Forms.CheckBox();
+this.lblFrom = new System.Windows.Forms.Label();
+this.dtFrom = new System.Windows.Forms.DateTimePicker();
+this.lblTo = new System.Windows.Forms.Label();
+this.dtTo = new System.Windows.Forms.DateTimePicker();
+this.canvas = new System.Windows.Forms.Panel();
+this.panelTop.SuspendLayout();
+this.tblTop.SuspendLayout();
+this.headerRow.SuspendLayout();
+this.filterRow.SuspendLayout();
+this.SuspendLayout();
+// 
+// panelTop
+// 
+this.panelTop.BackColor = System.Drawing.Color.DarkOrange;
+this.panelTop.Controls.Add(this.tblTop);
+this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+this.panelTop.Location = new System.Drawing.Point(0, 0);
+this.panelTop.Name = "panelTop";
+this.panelTop.Size = new System.Drawing.Size(1707, 120);
+this.panelTop.TabIndex = 0;
+// 
+// tblTop
+// 
+this.tblTop.ColumnCount = 1;
+this.tblTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+this.tblTop.Controls.Add(this.headerRow, 0, 0);
+this.tblTop.Controls.Add(this.filterRow, 0, 1);
+this.tblTop.Dock = System.Windows.Forms.DockStyle.Fill;
+this.tblTop.Location = new System.Drawing.Point(0, 0);
+this.tblTop.Name = "tblTop";
+this.tblTop.RowCount = 2;
+this.tblTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
+this.tblTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
+this.tblTop.Size = new System.Drawing.Size(1707, 120);
+this.tblTop.TabIndex = 0;
+// 
+// headerRow
+// 
+this.headerRow.ColumnCount = 4;
+this.headerRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+this.headerRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+this.headerRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.AutoSize));
+this.headerRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.AutoSize));
+this.headerRow.Controls.Add(this.lblTitle, 0, 0);
+this.headerRow.Controls.Add(this.btnPrint, 2, 0);
+this.headerRow.Controls.Add(this.btnExportImage, 3, 0);
+this.headerRow.Dock = System.Windows.Forms.DockStyle.Fill;
+this.headerRow.Location = new System.Drawing.Point(3, 3);
+this.headerRow.Name = "headerRow";
+this.headerRow.RowCount = 1;
+this.headerRow.RowStyles.Add(new System.Windows.Forms.RowStyle());
+this.headerRow.Size = new System.Drawing.Size(1701, 54);
+this.headerRow.TabIndex = 0;
+// 
+// lblTitle
+// 
+this.lblTitle.AutoSize = true;
+this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
+this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+this.lblTitle.ForeColor = System.Drawing.Color.White;
+this.lblTitle.Location = new System.Drawing.Point(3, 0);
+this.lblTitle.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+this.lblTitle.Name = "lblTitle";
+this.lblTitle.Size = new System.Drawing.Size(322, 54);
+this.lblTitle.TabIndex = 0;
+this.lblTitle.Text = "Statistics & Charts";
+this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+// 
+// btnPrint
+// 
+this.btnPrint.Anchor = System.Windows.Forms.AnchorStyles.Right;
+this.btnPrint.BackColor = System.Drawing.Color.WhiteSmoke;
+this.btnPrint.FlatAppearance.BorderSize = 0;
+this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+this.btnPrint.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+this.btnPrint.ForeColor = System.Drawing.Color.DarkOrange;
+this.btnPrint.Location = new System.Drawing.Point(1509, 6);
+this.btnPrint.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+this.btnPrint.Name = "btnPrint";
+this.btnPrint.Size = new System.Drawing.Size(85, 42);
+this.btnPrint.TabIndex = 1;
+this.btnPrint.Text = "Print";
+this.btnPrint.UseVisualStyleBackColor = false;
+this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+// 
+// btnExportImage
+// 
+this.btnExportImage.Anchor = System.Windows.Forms.AnchorStyles.Right;
+this.btnExportImage.BackColor = System.Drawing.Color.WhiteSmoke;
+this.btnExportImage.FlatAppearance.BorderSize = 0;
+this.btnExportImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+this.btnExportImage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+this.btnExportImage.ForeColor = System.Drawing.Color.DarkOrange;
+this.btnExportImage.Location = new System.Drawing.Point(1602, 6);
+this.btnExportImage.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+this.btnExportImage.Name = "btnExportImage";
+this.btnExportImage.Size = new System.Drawing.Size(95, 42);
+this.btnExportImage.TabIndex = 2;
+this.btnExportImage.Text = "Export";
+this.btnExportImage.UseVisualStyleBackColor = false;
+this.btnExportImage.Click += new System.EventHandler(this.btnExportImage_Click);
+// 
+// filterRow
+// 
+this.filterRow.ColumnCount = 12;
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.AutoSize)); // Mode label
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.AutoSize)); // Mode combo
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.AutoSize)); // Emp label
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.AutoSize)); // Emp combo
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.AutoSize)); // Range chk
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.AutoSize)); // From label
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.AutoSize)); // From picker
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.AutoSize)); // To label
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.AutoSize)); // To picker
+this.filterRow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F)); // filler
+this.filterRow.Controls.Add(this.lblMode, 0, 0);
+this.filterRow.Controls.Add(this.cboMode, 2, 0);
+this.filterRow.Controls.Add(this.lblEmp, 4, 0);
+this.filterRow.Controls.Add(this.cboEmployee, 6, 0);
+this.filterRow.Controls.Add(this.chkRange, 8, 0);
+this.filterRow.Controls.Add(this.lblFrom, 10, 0);
+this.filterRow.Controls.Add(this.dtFrom, 11, 0);
+this.filterRow.Controls.Add(this.lblTo, 13, 0);
+this.filterRow.Controls.Add(this.dtTo, 14, 0);
+this.filterRow.Dock = System.Windows.Forms.DockStyle.Fill;
+this.filterRow.Location = new System.Drawing.Point(3, 63);
+this.filterRow.Name = "filterRow";
+this.filterRow.RowCount = 1;
+this.filterRow.RowStyles.Add(new System.Windows.Forms.RowStyle());
+this.filterRow.Size = new System.Drawing.Size(1701, 54);
+this.filterRow.TabIndex = 1;
+// 
+// lblMode
+// 
+this.lblMode.AutoSize = true;
+this.lblMode.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+this.lblMode.ForeColor = System.Drawing.Color.White;
+this.lblMode.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
+this.lblMode.Name = "lblMode";
+this.lblMode.Size = new System.Drawing.Size(83, 32);
+this.lblMode.Text = "Mode";
+// 
+// cboMode
+// 
+this.cboMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+this.cboMode.Font = new System.Drawing.Font("Century Gothic", 10F);
+this.cboMode.Items.AddRange(new object[] {
+"Salary by Department (Bar)",
+"Total Salary by Month (Line)",
+"Employee Earnings by Month (Line)"});
+this.cboMode.Margin = new System.Windows.Forms.Padding(0, 6, 0, 0);
+this.cboMode.Name = "cboMode";
+this.cboMode.Size = new System.Drawing.Size(350, 41);
+this.cboMode.SelectedIndexChanged += new System.EventHandler(this.cboMode_SelectedIndexChanged);
+// 
+// lblEmp
+// 
+this.lblEmp.AutoSize = true;
+this.lblEmp.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+this.lblEmp.ForeColor = System.Drawing.Color.White;
+this.lblEmp.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
+this.lblEmp.Name = "lblEmp";
+this.lblEmp.Size = new System.Drawing.Size(123, 32);
+this.lblEmp.Text = "Employee";
+this.lblEmp.Visible = false;
+// 
+// cboEmployee
+// 
+this.cboEmployee.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+this.cboEmployee.Font = new System.Drawing.Font("Century Gothic", 10F);
+this.cboEmployee.Margin = new System.Windows.Forms.Padding(0, 6, 0, 0);
+this.cboEmployee.Name = "cboEmployee";
+this.cboEmployee.Size = new System.Drawing.Size(250, 41);
+this.cboEmployee.TabIndex = 5;
+this.cboEmployee.Visible = false;
+this.cboEmployee.SelectedIndexChanged += new System.EventHandler(this.cboEmployee_SelectedIndexChanged);
+// 
+// chkRange
+// 
+this.chkRange.AutoSize = true;
+this.chkRange.Font = new System.Drawing.Font("Century Gothic", 10F);
+this.chkRange.ForeColor = System.Drawing.Color.White;
+this.chkRange.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
+this.chkRange.Name = "chkRange";
+this.chkRange.Size = new System.Drawing.Size(118, 36);
+this.chkRange.Text = "Range";
+this.chkRange.UseVisualStyleBackColor = true;
+this.chkRange.Visible = false;
+this.chkRange.CheckedChanged += new System.EventHandler(this.chkRange_CheckedChanged);
+// 
+// lblFrom
+// 
+this.lblFrom.AutoSize = true;
+this.lblFrom.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+this.lblFrom.ForeColor = System.Drawing.Color.White;
+this.lblFrom.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
+this.lblFrom.Name = "lblFrom";
+this.lblFrom.Size = new System.Drawing.Size(74, 32);
+this.lblFrom.Text = "From";
+this.lblFrom.Visible = false;
+// 
+// dtFrom
+// 
+this.dtFrom.CustomFormat = "dd/MM/yyyy";
+this.dtFrom.Font = new System.Drawing.Font("Century Gothic", 10F);
+this.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+this.dtFrom.Margin = new System.Windows.Forms.Padding(4, 6, 0, 0);
+this.dtFrom.Name = "dtFrom";
+this.dtFrom.Size = new System.Drawing.Size(150, 40);
+this.dtFrom.Visible = false;
+this.dtFrom.ValueChanged += new System.EventHandler(this.dtFrom_ValueChanged);
+// 
+// lblTo
+// 
+this.lblTo.AutoSize = true;
+this.lblTo.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+this.lblTo.ForeColor = System.Drawing.Color.White;
+this.lblTo.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
+this.lblTo.Name = "lblTo";
+this.lblTo.Size = new System.Drawing.Size(42, 32);
+this.lblTo.TabIndex = 9;
+this.lblTo.Text = "To";
+this.lblTo.Visible = false;
+// 
+// dtTo
+// 
+this.dtTo.CustomFormat = "dd/MM/yyyy";
+this.dtTo.Font = new System.Drawing.Font("Century Gothic", 10F);
+this.dtTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+this.dtTo.Margin = new System.Windows.Forms.Padding(4, 6, 0, 0);
+this.dtTo.Name = "dtTo";
+this.dtTo.Size = new System.Drawing.Size(150, 40);
+this.dtTo.Visible = false;
+this.dtTo.ValueChanged += new System.EventHandler(this.dtTo_ValueChanged);
+// 
+// canvas
+// 
+this.canvas.BackColor = System.Drawing.Color.White;
+this.canvas.Dock = System.Windows.Forms.DockStyle.Fill;
+this.canvas.Location = new System.Drawing.Point(0, 120);
+this.canvas.Name = "canvas";
+this.canvas.Size = new System.Drawing.Size(1707, 880);
+this.canvas.TabIndex = 4;
+this.canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.canvas_Paint);
+this.canvas.Resize += new System.EventHandler(this.canvas_Resize);
+// 
+// StatisticsChartForm
+// 
+this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+this.ClientSize = new System.Drawing.Size(1707, 1000);
+this.Controls.Add(this.canvas);
+this.Controls.Add(this.panelTop);
+this.Name = "StatisticsChartForm";
+this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+this.Text = "Statistics & Charts";
+this.Load += new System.EventHandler(this.StatisticsChartForm_Load);
+this.panelTop.ResumeLayout(false);
+this.tblTop.ResumeLayout(false);
+this.headerRow.ResumeLayout(false);
+this.headerRow.PerformLayout();
+this.filterRow.ResumeLayout(false);
+this.filterRow.PerformLayout();
+this.ResumeLayout(false);
+}
+#endregion
+}
+}

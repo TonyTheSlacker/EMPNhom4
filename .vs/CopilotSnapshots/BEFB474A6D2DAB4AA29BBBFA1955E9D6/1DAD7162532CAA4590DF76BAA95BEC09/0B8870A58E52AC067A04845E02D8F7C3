@@ -1,0 +1,114 @@
+﻿using Microsoft.Reporting.WinForms;
+using System;
+using System.Data;
+using System.Linq;
+using System.Windows.Forms;
+
+namespace QLNHANVIENFULL {
+    public partial class ReportForm : Form {
+        EmployeeDataContext db = new EmployeeDataContext();
+        public ReportForm() {
+            InitializeComponent();
+        }
+
+        private void ReportForm_Load(object sender, EventArgs e) {
+            cbbGender.SelectedIndex = 0;
+
+
+            rdoAllDay.Checked = true;
+
+
+        }
+
+        private void btnExport_Click(object sender, EventArgs e) {
+
+            reportViewer1.LocalReport.ReportEmbeddedResource = "QLNHANVIENFULL.Report1.rdlc";
+            ReportParameter rp = new ReportParameter("DateTimeNowRp", DateTime.Now.ToString());
+            reportViewer1.LocalReport.SetParameters(rp);
+            ReportDataSource reportDataSource = new ReportDataSource();
+            reportDataSource.Name = "Salary";
+
+            string gender = cbbGender.Text;
+
+            if (rdoAllDay.Checked && gender == "All")
+            {
+                reportDataSource.Value = db.Salaries
+
+                    .Select(m => new { m.EmployeeName, m.Employee.EmpSal, m.Period, m.From, m.To, m.totalsal, m.Paydate });
+                reportViewer1.LocalReport.DataSources.Add(reportDataSource);
+            } else if (rdoAllDay.Checked && gender != "All")
+            {
+                reportDataSource.Value = db.Salaries
+                    .Where(m => m.Employee.EmpGen == gender)
+                    .Select(m => new { m.EmployeeName, m.Employee.EmpSal, m.Period, m.From, m.To, m.totalsal, m.Paydate });
+                reportViewer1.LocalReport.DataSources.Add(reportDataSource);
+            } else if (rdoFromto.Checked && gender == "All")
+            {
+                int NgayFrom = dtpkFrom.Value.Day;
+                int ThangFrom = dtpkFrom.Value.Month;
+                int NamFrom = dtpkFrom.Value.Year;
+
+
+                int NgayTo = dtpkTo.Value.Day;
+                int ThangTo = dtpkTo.Value.Month;
+                int NamTo = dtpkTo.Value.Year;
+
+                reportDataSource.Value = db.Salaries
+                    .Where(m => m.From.Day >= NgayFrom)
+                    .Where(m => m.From.Month >= ThangFrom)
+                    .Where(m => m.From.Year >= NamFrom)
+                    .Where(m => m.To.Day <= NgayTo)
+                    .Where(m => m.To.Month <= ThangTo)
+                    .Where(m => m.To.Year <= NamTo)
+                    .Select(m => new { m.EmployeeName, m.Employee.EmpSal, m.Period, m.From, m.To, m.totalsal, m.Paydate });
+                reportViewer1.LocalReport.DataSources.Add(reportDataSource);
+
+            } else if (rdoFromto.Checked && gender != "All")
+            {
+                int NgayFrom = dtpkFrom.Value.Day;
+                int ThangFrom = dtpkFrom.Value.Month;
+                int NamFrom = dtpkFrom.Value.Year;
+
+
+                int NgayTo = dtpkTo.Value.Day;
+                int ThangTo = dtpkTo.Value.Month;
+                int NamTo = dtpkTo.Value.Year;
+                reportDataSource.Value = db.Salaries
+                    .Where(m => m.Employee.EmpGen == gender)
+                    .Where(m => m.From.Day >= NgayFrom)
+                    .Where(m => m.From.Month >= ThangFrom)
+                    .Where(m => m.From.Year >= NamFrom)
+                    .Where(m => m.To.Day <= NgayTo)
+                    .Where(m => m.To.Month <= ThangTo)
+                    .Where(m => m.To.Year <= NamTo)
+                    .Select(m => new { m.EmployeeName, m.Employee.EmpSal, m.Period, m.From, m.To, m.totalsal, m.Paydate });
+                reportViewer1.LocalReport.DataSources.Add(reportDataSource);
+            }
+            this.reportViewer1.RefreshReport();
+        }
+
+
+
+
+
+
+
+        private void rdoAllDay_CheckedChanged(object sender, EventArgs e) {
+            if (rdoAllDay.Checked == true)
+            {
+                dtpkFrom.Enabled = false;
+                dtpkTo.Enabled = false;
+
+            } else
+            {
+                dtpkFrom.Enabled = true;
+                dtpkTo.Enabled = true;
+            }
+
+        }
+
+        private void label3_Click(object sender, EventArgs e) {
+
+        }
+    }
+}

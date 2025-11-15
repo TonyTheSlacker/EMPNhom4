@@ -1,0 +1,81 @@
+﻿using Microsoft.Reporting.WinForms;
+using System;
+using System.Linq;
+using System.Windows.Forms;
+
+namespace QLNHANVIENFULL {
+    public partial class ReportForm : Form {
+        EmployeeDataContext db = new EmployeeDataContext();
+        public ReportForm() {
+            InitializeComponent();
+        }
+
+        private void ReportForm_Load(object sender, EventArgs e) {
+            cbbGender.Items.Clear();
+            cbbGender.Items.AddRange(new object[] { "All", "Male", "Female" });
+            cbbGender.SelectedIndex =0;
+            rdoAllDay.Checked = true;
+
+            // Populate names and IDs
+            var employees = db.Employees.Select(emp => new { emp.EmpID, emp.EmpName }).ToList();
+            cbbFullName.Items.Clear();
+            cbbEmpID.Items.Clear();
+            cbbFullName.Items.Add("All");
+            cbbEmpID.Items.Add("All");
+            foreach (var emp in employees) {
+                cbbFullName.Items.Add(emp.EmpName);
+                cbbEmpID.Items.Add(emp.EmpID.ToString());
+            }
+            cbbFullName.SelectedIndex =0;
+            cbbEmpID.SelectedIndex =0;
+        }
+
+        private void btnExport_Click(object sender, EventArgs e) {
+            reportViewer1.LocalReport.ReportEmbeddedResource = "QLNHANVIENFULL.Report1.rdlc";
+            // Better formatted timestamp
+            ReportParameter rp = new ReportParameter("DateTimeNowRp", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+            reportViewer1.LocalReport.SetParameters(rp);
+            var reportDataSource = new ReportDataSource { Name = "Salary" };
+
+            string gender = cbbGender.Text;
+            string nameSelected = cbbFullName.Text;
+            string idSelected = cbbEmpID.Text;
+
+            var baseQuery = db.Salaries.AsQueryable();
+            if (gender != "All") baseQuery = baseQuery.Where(m => m.Employee.EmpGen == gender);
+            if (nameSelected != "All") baseQuery = baseQuery.Where(m => m.EmployeeName == nameSelected);
+            if (idSelected != "All") baseQuery = baseQuery.Where(m => m.Employee.EmpID.ToString() == idSelected);
+
+            // Correct date range filtering (compare whole DateTime instead of individual components)
+            if (rdoFromto.Checked) {
+                DateTime fromDate = dtpkFrom.Value.Date;
+                DateTime toDate = dtpkTo.Value.Date;
+                baseQuery = baseQuery.Where(m => m.From >= fromDate && m.To <= toDate);
+            }
+
+            // Project field names exactly as RDLC expects (add EmployeeID and Scode for new columns, Salary instead of EmpSal)
+            reportDataSource.Value = baseQuery
+                .OrderBy(m => m.Employee.EmpID)
+                .Select(m => new { m.Employee.EmpID, m.Scode, m.EmployeeName, Salary = m.Employee.EmpSal, m.Period, m.From, m.To, m.Paydate, m.totalsal });
+
+            reportViewer1.LocalReport.DataSources.Clear();
+            reportViewer1.LocalReport.DataSources.Add(reportDataSource);
+            reportViewer1.RefreshReport();
+        }
+
+        private void btnChart_Click(object sender, EventArgs e) {
+            using (var chartForm = new StatisticsChartForm()) {
+                chartForm.ShowDialog(this);
+            }
+        }
+
+        private void rdoAllDay_CheckedChanged(object sender, EventArgs e) {
+            bool enableRange = !rdoAllDay.Checked;
+            dtpkFrom.Enabled = enableRange;
+            dtpkTo.Enabled = enableRange;
+        }
+        private void label3_Click(object sender, EventArgs e) { }
+        private void cbbFullName_SelectedIndexChanged(object sender, EventArgs e) { }
+        private void cbbEmpID_SelectedIndexChanged(object sender, EventArgs e) { }
+    }
+}

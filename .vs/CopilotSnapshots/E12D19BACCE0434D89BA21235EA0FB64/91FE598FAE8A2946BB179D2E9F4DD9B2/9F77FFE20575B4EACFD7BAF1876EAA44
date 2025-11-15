@@ -1,0 +1,32 @@
+﻿using System.Globalization;
+
+namespace QLNHANVIENFULL
+{
+ public static class CurrencyFormatter
+ {
+ private static readonly CultureInfo Vi = new CultureInfo("vi-VN");
+
+ public static string Format(long value)
+ => value.ToString("N0", Vi); // phần nghìn with '.' as thousands separator
+
+ public static string Format(int value)
+ => value.ToString("N0", Vi);
+
+ public static string Format(decimal value)
+ => value.ToString("N0", Vi);
+
+ // Parse text that may contain thousand separators or other non-digits
+ public static int ParseToInt(string text)
+ {
+ if (string.IsNullOrWhiteSpace(text)) return0;
+ var chars = text.Trim().ToCharArray();
+ var buf = new System.Text.StringBuilder(chars.Length);
+ foreach (var ch in chars)
+ {
+ if (char.IsDigit(ch)) buf.Append(ch);
+ }
+ if (int.TryParse(buf.ToString(), out var val)) return val;
+ return0;
+ }
+ }
+}

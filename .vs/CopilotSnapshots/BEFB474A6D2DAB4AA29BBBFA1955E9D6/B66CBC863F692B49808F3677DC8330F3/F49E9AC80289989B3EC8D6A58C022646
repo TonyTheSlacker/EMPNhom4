@@ -1,0 +1,156 @@
+﻿using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+
+namespace QLNHANVIENFULL {
+    public class AboutUsForm : Form {
+        public AboutUsForm() {
+            this.Text = "About Us";
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterParent;
+            this.ClientSize = new Size(760, 520);
+            this.BackColor = Color.WhiteSmoke;
+
+            var title = new Label
+            {
+                Text = "Project Team",
+                Font = new Font("Century Gothic", 18, FontStyle.Bold),
+                ForeColor = Color.DarkOrange,
+                AutoSize = false,
+                TextAlign = ContentAlignment.MiddleCenter,
+                Dock = DockStyle.Top,
+                Height = 60
+            };
+            Controls.Add(title);
+
+            // Horizontal, single-row layout for all5 cards (no wrapping)
+            var flow = new FlowLayoutPanel
+            {
+                Dock = DockStyle.Fill,
+                AutoScroll = true,
+                Padding = new Padding(10, 10, 10, 10), // reduce padding so5 cards fit
+                BackColor = Color.WhiteSmoke,
+                WrapContents = false,
+                FlowDirection = FlowDirection.LeftToRight
+            };
+            Controls.Add(flow);
+
+            flow.Controls.Add(BuildCard("Member1", "123456", "Database, UI design"));
+            flow.Controls.Add(BuildCard("Member2", "234567", "Business logic"));
+            flow.Controls.Add(BuildCard("Member3", "345678", "Testing, documentation"));
+            flow.Controls.Add(BuildCard("Member4", "456789", "Reporting module"));
+            flow.Controls.Add(BuildCard("Member5", "567890", "Security & encryption"));
+
+            var closeBtn = new Button
+            {
+                Text = "Close",
+                Font = new Font("Century Gothic", 10, FontStyle.Bold),
+                ForeColor = Color.DarkOrange,
+                BackColor = Color.White,
+                Height = 40,
+                Width = 100,
+                Anchor = AnchorStyles.Bottom | AnchorStyles.Right,
+                FlatStyle = FlatStyle.Flat
+            };
+            closeBtn.FlatAppearance.BorderColor = Color.DarkOrange;
+            closeBtn.FlatAppearance.BorderSize = 1;
+            closeBtn.Click += (s, e) => this.Close();
+
+            var bottom = new Panel { Dock = DockStyle.Bottom, Height = 55, BackColor = Color.WhiteSmoke };
+            bottom.Controls.Add(closeBtn);
+            closeBtn.Location = new Point(bottom.Width - closeBtn.Width - 15, (bottom.Height - closeBtn.Height) / 2);
+            bottom.Resize += (s, e) => closeBtn.Location = new Point(bottom.Width - closeBtn.Width - 15, (bottom.Height - closeBtn.Height) / 2);
+            Controls.Add(bottom);
+        }
+
+        // Card sized so5 fit on one line in the current client width without wrapping
+        private Control BuildCard(string fullName, string studentId, string contribution) {
+            var card = new Panel
+            {
+                Width = 128, //5 * (128 +16 margin) +2*10 padding =740 <=760
+                Height = 210,
+                Margin = new Padding(8),
+                BackColor = Color.White,
+                BorderStyle = BorderStyle.FixedSingle
+            };
+
+            var pic = new PictureBox
+            {
+                Size = new Size(68, 68),
+                SizeMode = PictureBoxSizeMode.Zoom,
+                BackColor = Color.Gainsboro,
+                BorderStyle = BorderStyle.FixedSingle,
+                Image = CreateAvatar(fullName),
+                Location = new Point((card.Width - 68) / 2, 10)
+            };
+            card.Controls.Add(pic);
+
+            var lblName = new Label
+            {
+                Text = fullName,
+                Font = new Font("Century Gothic", 8.5f, FontStyle.Bold),
+                ForeColor = Color.DarkOrange,
+                AutoSize = false,
+                Width = card.Width - 16,
+                Location = new Point(8, 86)
+            };
+            card.Controls.Add(lblName);
+
+            var lblId = new Label
+            {
+                Text = "ID: " + studentId,
+                Font = new Font("Century Gothic", 8f, FontStyle.Regular),
+                ForeColor = Color.DarkOrange,
+                AutoSize = false,
+                Width = card.Width - 16,
+                Location = new Point(8, 104)
+            };
+            card.Controls.Add(lblId);
+
+            var lblContribution = new Label
+            {
+                Text = contribution,
+                Font = new Font("Century Gothic", 8f, FontStyle.Italic),
+                ForeColor = Color.DarkOrange,
+                AutoSize = false,
+                Width = card.Width - 16,
+                Height = 80,
+                Location = new Point(8, 122)
+            };
+            card.Controls.Add(lblContribution);
+
+            return card;
+        }
+
+        private Image CreateAvatar(string name) {
+            int size = 90;
+            var bmp = new Bitmap(size, size);
+            using (var g = Graphics.FromImage(bmp)) {
+                g.SmoothingMode = SmoothingMode.AntiAlias;
+                g.Clear(Color.WhiteSmoke);
+                var rect = new Rectangle(0, 0, size - 1, size - 1);
+                using (var brush = new SolidBrush(Color.Gainsboro)) g.FillEllipse(brush, rect);
+                using (var pen = new Pen(Color.DarkOrange, 3)) g.DrawEllipse(pen, rect);
+                string text = string.IsNullOrEmpty(name) ? "?" : char.ToUpper(name[0]).ToString();
+                using (var f = new Font("Century Gothic", 28, FontStyle.Bold))
+                using (var txtBrush = new SolidBrush(Color.DarkOrange)) {
+                    var sz = g.MeasureString(text, f);
+                    g.DrawString(text, f, txtBrush, (size - sz.Width) / 2, (size - sz.Height) / 2);
+                }
+            }
+            return bmp;
+        }
+
+        private void InitializeComponent() {
+            this.SuspendLayout();
+            // 
+            // AboutUsForm
+            // 
+            this.ClientSize = new System.Drawing.Size(1048, 712);
+            this.Name = "AboutUsForm";
+            this.ResumeLayout(false);
+
+        }
+    }
+}

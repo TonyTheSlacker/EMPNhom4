@@ -1,0 +1,199 @@
+﻿namespace QLNHANVIENFULL
+{
+    partial class ReportForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportForm));
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.cbbGender = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtpkTo = new System.Windows.Forms.DateTimePicker();
+            this.dtpkFrom = new System.Windows.Forms.DateTimePicker();
+            this.rdoFromto = new System.Windows.Forms.RadioButton();
+            this.rdoAllDay = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "QLNHANVIENFULL.Report1.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(18, 155);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(1730, 1063);
+            this.reportViewer1.TabIndex = 0;
+            // 
+            // cbbGender
+            // 
+            this.cbbGender.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbGender.FormattingEnabled = true;
+            this.cbbGender.Items.AddRange(new object[] {
+            "All",
+            "Male",
+            "Female"});
+            this.cbbGender.Location = new System.Drawing.Point(188, 88);
+            this.cbbGender.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbbGender.Name = "cbbGender";
+            this.cbbGender.Size = new System.Drawing.Size(326, 40);
+            this.cbbGender.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(45, 92);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 36);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Gender";
+            // 
+            // dtpkTo
+            // 
+            this.dtpkTo.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkTo.Location = new System.Drawing.Point(1157, 97);
+            this.dtpkTo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtpkTo.Name = "dtpkTo";
+            this.dtpkTo.Size = new System.Drawing.Size(240, 31);
+            this.dtpkTo.TabIndex = 4;
+            // 
+            // dtpkFrom
+            // 
+            this.dtpkFrom.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkFrom.Location = new System.Drawing.Point(812, 92);
+            this.dtpkFrom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtpkFrom.Name = "dtpkFrom";
+            this.dtpkFrom.Size = new System.Drawing.Size(240, 31);
+            this.dtpkFrom.TabIndex = 4;
+            // 
+            // rdoFromto
+            // 
+            this.rdoFromto.AutoSize = true;
+            this.rdoFromto.Location = new System.Drawing.Point(864, 16);
+            this.rdoFromto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rdoFromto.Name = "rdoFromto";
+            this.rdoFromto.Size = new System.Drawing.Size(106, 29);
+            this.rdoFromto.TabIndex = 5;
+            this.rdoFromto.TabStop = true;
+            this.rdoFromto.Text = "Range";
+            this.rdoFromto.UseVisualStyleBackColor = true;
+            // 
+            // rdoAllDay
+            // 
+            this.rdoAllDay.AutoSize = true;
+            this.rdoAllDay.Location = new System.Drawing.Point(999, 14);
+            this.rdoAllDay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rdoAllDay.Name = "rdoAllDay";
+            this.rdoAllDay.Size = new System.Drawing.Size(120, 29);
+            this.rdoAllDay.TabIndex = 6;
+            this.rdoAllDay.TabStop = true;
+            this.rdoAllDay.Text = "All Time";
+            this.rdoAllDay.UseVisualStyleBackColor = true;
+            this.rdoAllDay.CheckedChanged += new System.EventHandler(this.rdoAllDay_CheckedChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(720, 87);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 36);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "From";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(1082, 87);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 36);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "To";
+            // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnExport.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExport.ForeColor = System.Drawing.Color.White;
+            this.btnExport.Location = new System.Drawing.Point(1517, 43);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(218, 80);
+            this.btnExport.TabIndex = 10;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // ReportForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkOrange;
+            this.ClientSize = new System.Drawing.Size(1772, 1238);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.rdoAllDay);
+            this.Controls.Add(this.rdoFromto);
+            this.Controls.Add(this.dtpkFrom);
+            this.Controls.Add(this.dtpkTo);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbbGender);
+            this.Controls.Add(this.reportViewer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "ReportForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Employee Report Form";
+            this.Load += new System.EventHandler(this.ReportForm_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.ComboBox cbbGender;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dtpkTo;
+        private System.Windows.Forms.DateTimePicker dtpkFrom;
+        private System.Windows.Forms.RadioButton rdoFromto;
+        private System.Windows.Forms.RadioButton rdoAllDay;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnExport;
+    }
+}
