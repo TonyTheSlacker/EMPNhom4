@@ -20,11 +20,9 @@ Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt các công c
 
 ## Cài đặt và Cấu hình
 
-Thực hiện theo các bước sau để chạy dự án trên máy tính của bạn.
-
 ### 1. Tải mã nguồn từ Repository
 
-Sao chép dự án từ GitHub về máy của bạn.
+copy đường dẫn sau và dán vào Terminal
 
 git clone https://github.com/TonyTheSlacker/EMPNhom4.git cd EMPNhom4
 
@@ -33,7 +31,7 @@ git clone https://github.com/TonyTheSlacker/EMPNhom4.git cd EMPNhom4
 
 Ứng dụng yêu cầu một cơ sở dữ liệu SQL Server có tên là `EmployeeManagementSystem`.
 
-1.  Mở SQL Server Management Studio (SSMS) và kết nối với SQL Server instance của bạn.
+1.  Mở SQL Server Management Studio (SSMS) và kết nối với SQL Server instance.
 2.  Tạo một cơ sở dữ liệu mới, trống với tên là `EmployeeManagementSystem`.
 3.  Ứng dụng sử dụng LINQ to SQL để tương tác với các bảng. Bạn cần tạo schema cho cơ sở dữ liệu (bảng, cột, v.v.). Nếu bạn có một tệp kịch bản `.sql`, hãy chạy nó để tạo schema. Nếu không, schema được định nghĩa trong tệp `Employee.dbml` của dự án.
 
@@ -41,7 +39,7 @@ git clone https://github.com/TonyTheSlacker/EMPNhom4.git cd EMPNhom4
 
 Bạn phải cập nhật chuỗi kết nối cơ sở dữ liệu để trỏ đến SQL Server instance trên máy của bạn.
 
-1.  Mở tệp `EmployeeManagementSystem.sln` trong Visual Studio.
+1.  Mở file `EmployeeManagementSystem.sln` trong Visual Studio.
 2.  Trong Solution Explorer, mở tệp `App.config`.
 3.  Tìm đến phần `<connectionStrings>` và tìm chuỗi kết nối có tên `EmployeeManagementSystem.Properties.Settings.EmployeeManagementSystemConnectionString`.
 4.  Sửa đổi `Data Source` để khớp với tên SQL Server instance của bạn. Đối với cài đặt SQL Express mặc định, tên này thường là `.\SQLEXPRESS` hoặc `(localdb)\MSSQLLocalDB`.
@@ -52,7 +50,7 @@ Bạn phải cập nhật chuỗi kết nối cơ sở dữ liệu để trỏ �
         connectionString="Data Source=SURFACE\MYSQL;Initial Catalog=EmployeeManagementSystem;Integrated Security=True"
         providerName="System.Data.SqlClient" />
     ```
-    Thành (nếu instance của bạn tên là `SQLEXPRESS`):
+    Thành (nếu instanc là `SQLEXPRESS`):
     ```xml
     <add name="EmployeeManagementSystem.Properties.Settings.EmployeeManagementSystemConnectionString"
         connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=EmployeeManagementSystem;Integrated Security=True"
@@ -61,14 +59,14 @@ Bạn phải cập nhật chuỗi kết nối cơ sở dữ liệu để trỏ �
 
 ### 4. Cấu hình Email để khôi phục mật khẩu
 
-Chức năng "Quên mật khẩu" sử dụng một tài khoản Gmail để gửi mã OTP. Bạn phải cấu hình nó với thông tin đăng nhập của riêng bạn.
+Chức năng "Quên mật khẩu" sử dụng một tài khoản Gmail để gửi mã OTP. Người dùng phải cài đặt lại với email cá nhân của mình.
 
 1.  Trong Solution Explorer, mở tệp `ForgetPasswordForm.cs`.
 2.  Đi đến phương thức `btnRequest_Click`.
 3.  **Cập nhật địa chỉ email người gửi:**
     Thay đổi địa chỉ email ở dòng này thành tài khoản Gmail của bạn:
     ```csharp
-    var from = new MailAddress("hoanhoan010@gmail.com");
+    var from = new MailAddress("example@gmail.com");
     ```
 
 4.  **Cập nhật mật khẩu ứng dụng:**
@@ -79,7 +77,7 @@ Chức năng "Quên mật khẩu" sử dụng một tài khoản Gmail để g�
     *   Tạo một mật khẩu ứng dụng mới cho ứng dụng này.
     *   Sao chép mật khẩu 16 ký tự (không có khoảng trắng) và dán vào dòng sau, thay thế cho chuỗi hiện tại:
     ```csharp
-    const string frompass = "wvki gjuv cfkd cjbs"; // Thay thế chuỗi này bằng Mật khẩu ứng dụng Google 16 ký tự của bạn
+    const string frompass = "dddd ffff eeee wwww"; // Thay thế chuỗi này bằng Mật khẩu ứng dụng Google 16 ký tự trong app
     ```
 
 ### 5. Build và Chạy ứng dụng
@@ -90,5 +88,5 @@ Chức năng "Quên mật khẩu" sử dụng một tài khoản Gmail để g�
 ## Hướng dẫn sử dụng
 
 1.  **Đăng nhập:** Khởi chạy ứng dụng để mở màn hình đăng nhập. Sử dụng thông tin đăng nhập hợp lệ để vào hệ thống.
-2.  **Bảng điều khiển chính:** Sau khi đăng nhập, bạn có thể điều hướng giữa các mục quản lý khác nhau (Nhân viên, Phòng ban, Lương, v.v.) bằng menu chính.
+2.  **Bảng điều khiển chính:** Sau khi đăng nhập, người dùng có thể điều hướng giữa các mục quản lý khác nhau (Nhân viên, Phòng ban, Lương, v.v.) bằng menu chính.
 3.  **Báo cáo:** Điều hướng đến mục "Báo cáo" để xem, lọc và xuất báo cáo lương của nhân viên.
