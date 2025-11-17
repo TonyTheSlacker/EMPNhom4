@@ -13,7 +13,7 @@
 
 ## Yêu cầu cài đặt
 
-Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt các công cụ sau:
+Trước khi bắt đầu, hãy đảm bảo đã cài đặt các công cụ sau:
 *   **Visual Studio 2022** (với workload ".NET desktop development")
 *   **.NET Framework 4.7.2 Developer Pack**
 *   **SQL Server** (bất kỳ phiên bản nào, như Express, Developer, hoặc Standard)
@@ -33,9 +33,9 @@ git clone https://github.com/TonyTheSlacker/EMPNhom4.git cd EMPNhom4
 
 1.  Mở SQL Server Management Studio (SSMS) và kết nối với SQL Server instance.
 2.  Tạo một cơ sở dữ liệu mới, trống với tên là `EmployeeManagementSystem`.
-3.  Ứng dụng sử dụng LINQ to SQL để tương tác với các bảng. Bạn cần tạo schema cho cơ sở dữ liệu (bảng, cột, v.v.). Nếu bạn có một tệp kịch bản `.sql`, hãy chạy nó để tạo schema. Nếu không, schema được định nghĩa trong tệp `Employee.dbml` của dự án.
+3.  Ứng dụng sử dụng LINQ to SQL để tương tác với các bảng. Người dùng cần tạo schema cho cơ sở dữ liệu (bảng, cột, v.v.). Nếu bạn có một tệp kịch bản `.sql`, hãy chạy nó để tạo schema. Nếu không, schema được định nghĩa trong tệp `Employee.dbml` của dự án.
 
-### 3. Cấu hình Chuỗi kết nối
+### 3. Kết nối
 
 Bạn phải cập nhật chuỗi kết nối cơ sở dữ liệu để trỏ đến SQL Server instance trên máy của bạn.
 
@@ -50,7 +50,7 @@ Bạn phải cập nhật chuỗi kết nối cơ sở dữ liệu để trỏ �
         connectionString="Data Source=SURFACE\MYSQL;Initial Catalog=EmployeeManagementSystem;Integrated Security=True"
         providerName="System.Data.SqlClient" />
     ```
-    Thành (nếu instanc là `SQLEXPRESS`):
+    Thành (nếu instance là `SQLEXPRESS`):
     ```xml
     <add name="EmployeeManagementSystem.Properties.Settings.EmployeeManagementSystemConnectionString"
         connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=EmployeeManagementSystem;Integrated Security=True"
@@ -64,9 +64,9 @@ Chức năng "Quên mật khẩu" sử dụng một tài khoản Gmail để g�
 1.  Trong Solution Explorer, mở tệp `ForgetPasswordForm.cs`.
 2.  Đi đến phương thức `btnRequest_Click`.
 3.  **Cập nhật địa chỉ email người gửi:**
-    Thay đổi địa chỉ email ở dòng này thành tài khoản Gmail của bạn:
+    Thay đổi địa chỉ email ở dòng này thành tài khoản Gmail:
     ```csharp
-    var from = new MailAddress("example@gmail.com");
+    var from = new MailAddress("example@gmail.com"); // change here 
     ```
 
 4.  **Cập nhật mật khẩu ứng dụng:**
