@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report Name="Report1" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
+  <Language>vi-VN</Language>
   <DataSources>
     <DataSource Name="EmployeeManagementSystemDataSet">
       <ConnectionProperties>
@@ -122,7 +123,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -145,7 +145,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -168,7 +167,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -191,7 +189,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -214,7 +211,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -237,7 +233,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -260,7 +255,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -283,7 +277,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -309,7 +302,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -330,7 +322,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -351,7 +342,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -372,7 +362,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -395,7 +384,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -418,7 +406,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -441,7 +428,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -464,7 +450,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Style />
                         </Textbox>
                       </CellContents>
                     </TablixCell>
@@ -513,13 +498,13 @@
       <Page>
         <PageHeight>11.69in</PageHeight>
         <PageWidth>8.27in</PageWidth>
+        <LeftMargin>0in</LeftMargin>
+        <RightMargin>0in</RightMargin>
         <TopMargin>0.25in</TopMargin>
         <BottomMargin>0.25in</BottomMargin>
         <Style />
       </Page>
     </ReportSection>
   </ReportSections>
-  <Language>vi-VN</Language>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>d9824f65-67c9-4ab9-a7e6-bac34dd690c8</rd:ReportID>
 </Report>

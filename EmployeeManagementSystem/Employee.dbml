@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLNHANVIEN" Class="EmployeeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLExpress;Initial Catalog=QLNHANVIEN;Integrated Security=True" SettingsObjectName="QLNHANVIENFULL.Properties.Settings" SettingsPropertyName="QLNHANVIENConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLExpress;Initial Catalog=QLNHANVIEN;Integrated Security=True" SettingsObjectName="EmployeeManagementSystem.Properties.Settings" SettingsPropertyName="QLNHANVIENConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Account" Member="Accounts">
     <Type Name="Account">
       <Column Name="username" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
@@ -40,6 +40,7 @@
       <Column Name="[From]" Member="From" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
       <Column Name="[To]" Member="To" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
       <Column Name="totalsal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UnpaidDays" Type="System.Int32" DbType="int" CanBeNull="false" />
       <Association Name="Employee_Salary" Member="Employee" ThisKey="EmployeeID" OtherKey="EmpID" Type="Employee" IsForeignKey="true" />
     </Type>
   </Table>

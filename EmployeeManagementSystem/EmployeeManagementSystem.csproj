@@ -83,6 +83,9 @@
     <Compile Include="DepartmentForm.Designer.cs">
       <DependentUpon>DepartmentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>Employee.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Employee.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -126,14 +129,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLNHANVIENDataSet.cs">
-      <DependentUpon>QLNHANVIENDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="QLNHANVIENDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLNHANVIENDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +206,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,17 +246,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="QLNHANVIENDataSet.xsc">
-      <DependentUpon>QLNHANVIENDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QLNHANVIENDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLNHANVIENDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QLNHANVIENDataSet.xss">
-      <DependentUpon>QLNHANVIENDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

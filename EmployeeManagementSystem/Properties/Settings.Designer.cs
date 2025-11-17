@@ -33,5 +33,15 @@ namespace EmployeeManagementSystem.Properties {
                 return ((string)(this["EmployeeManagementSystemConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SURFACE\\MYSQL;Initial Catalog=QLNHANVIEN;Integrated Security=True")]
+        public string QLNHANVIENConnectionString {
+            get {
+                return ((string)(this["QLNHANVIENConnectionString"]));
+            }
+        }
     }
 }

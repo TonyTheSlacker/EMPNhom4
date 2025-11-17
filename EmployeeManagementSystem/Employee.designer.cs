@@ -45,7 +45,7 @@ namespace EmployeeManagementSystem
     #endregion
 		
 		public EmployeeDataContext() : 
-				base(global::EmployeeManagementSystem.Properties.Settings.Default.EmployeeManagementSystemConnectionString, mappingSource)
+				base(global::EmployeeManagementSystem.Properties.Settings.Default.QLNHANVIENConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -676,9 +676,9 @@ namespace EmployeeManagementSystem
 		
 		private System.DateTime _To;
 		
-		private System.Nullable<long> _totalsal;
+		private System.Nullable<int> _totalsal;
 		
-		private System.Nullable<int> _UnpaidDays;
+		private int _UnpaidDays;
 		
 		private EntityRef<Employee> _Employee;
 		
@@ -702,9 +702,9 @@ namespace EmployeeManagementSystem
     partial void OnFromChanged();
     partial void OnToChanging(System.DateTime value);
     partial void OnToChanged();
-    partial void OntotalsalChanging(System.Nullable<long> value);
+    partial void OntotalsalChanging(System.Nullable<int> value);
     partial void OntotalsalChanged();
-    partial void OnUnpaidDaysChanging(System.Nullable<int> value);
+    partial void OnUnpaidDaysChanging(int value);
     partial void OnUnpaidDaysChanged();
     #endregion
 		
@@ -878,8 +878,8 @@ namespace EmployeeManagementSystem
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalsal", DbType="BigInt")]
-		public System.Nullable<long> totalsal
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalsal", DbType="Int")]
+		public System.Nullable<int> totalsal
 		{
 			get
 			{
@@ -898,8 +898,8 @@ namespace EmployeeManagementSystem
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UnpaidDays", DbType="Int")]
-		public System.Nullable<int> UnpaidDays
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UnpaidDays", DbType="int")]
+		public int UnpaidDays
 		{
 			get
 			{

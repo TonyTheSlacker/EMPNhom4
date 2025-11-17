@@ -65,57 +65,45 @@ namespace EmployeeManagementSystem {
             return (int)v;
         }
 
-        private void RecalculateStoredPeriods() {
-            bool anyChange = false;
-            foreach (var s in db.Salaries)
-            {
-                int newMonths = CalcMonths(s.From, s.To);
-                long newTotal = ComputeNetTotalLong(s.Salary1, s.From, s.To, s.UnpaidDays);
-                if (s.Period != newMonths)
-                {
-                    s.Period = newMonths;
-                    anyChange = true;
-                }
-                if (s.totalsal.GetValueOrDefault() != newTotal)
-                {
-                    s.totalsal = newTotal;
-                    anyChange = true;
-                }
-            }
-            if (anyChange)
-            {
-                try
-                {
-                    db.SubmitChanges();
-                } catch { }
-            }
-        }
-
         // Bind grid using existing designer columns (AutoGenerateColumns=false)
         public void LoadSalary() {
             try
             {
                 ResetContext(); // ensure fresh data
-                RecalculateStoredPeriods();
                 dgvSalary.AutoGenerateColumns = false;
-                var rows = db.Salaries.ToList(); // materialize to avoid provider overflows
+
+                // IMPORTANT: Project only the fields we need to avoid materializing the whole entity
+                // which can fail if a mapped column type in DB doesn't match (e.g., totalsal decimal vs int).
+                var rows = db.Salaries
+                    .Select(p => new {
+                        p.EmployeeID,
+                        p.EmployeeName,
+                        p.Scode,
+                        p.Salary1,
+                        p.Period,
+                        p.From,
+                        p.To,
+                        p.Paydate,
+                        p.UnpaidDays
+                    })
+                    .ToList();
+
                 dgvSalary.DataSource = rows
                     .Select(p => new
                     {
                         EmpID = p.EmployeeID,
-                        EmpName = p.EmployeeName, // use stored column, avoids null navigation
+                        EmpName = p.EmployeeName,
                         Scode = p.Scode,
                         Salary1 = CurrencyFormatter.Format(p.Salary1),
                         Period = p.Period,
                         From = p.From,
                         To = p.To,
                         Paydate = p.Paydate,
-                        // Display full long value (recomputed) instead of persisted clamped int
                         totalsal = CurrencyFormatter.Format(ComputeNetTotalLong(p.Salary1, p.From, p.To, p.UnpaidDays)),
                         UnpaidDays = p.UnpaidDays
                     })
                     .ToList();
-                // Sum using long recomputation to avoid int overflow
+
                 long totalAll = rows.Sum(s => ComputeNetTotalLong(s.Salary1, s.From, s.To, s.UnpaidDays));
                 lbltotal.Text = CurrencyFormatter.Format(totalAll) + "$";
             } catch (Exception ex)
@@ -138,12 +126,9 @@ namespace EmployeeManagementSystem {
                     {
                         try
                         {
-                            Salary sal = db.Salaries.SingleOrDefault(m => m.Scode == int.Parse(dgvSalary["IDSal", posrow].Value.ToString()));
-                            if (sal != null)
-                            {
-                                db.Salaries.DeleteOnSubmit(sal);
-                                db.SubmitChanges();
-                            }
+                            // Avoid materializing the entity (which can throw due to type mismatch). Delete by key directly.
+                            int scode = int.Parse(dgvSalary["IDSal", posrow].Value.ToString());
+                            db.ExecuteCommand("DELETE FROM [dbo].[Salary] WHERE [Scode] = {0}", scode);
                         } catch (Exception ex)
                         {
                             MessageBox.Show("Delete failed: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -186,9 +171,23 @@ namespace EmployeeManagementSystem {
             try
             {
                 ResetContext();
-                RecalculateStoredPeriods();
                 dgvSalary.AutoGenerateColumns = false;
-                var rows = db.Salaries.Where(m => (m.EmployeeName ?? string.Empty).Contains(term) || m.EmployeeID.ToString().Contains(term)).ToList();
+
+                var rows = db.Salaries
+                    .Where(m => (m.EmployeeName ?? string.Empty).Contains(term) || m.EmployeeID.ToString().Contains(term))
+                    .Select(p => new {
+                        p.EmployeeID,
+                        p.EmployeeName,
+                        p.Scode,
+                        p.Salary1,
+                        p.Period,
+                        p.From,
+                        p.To,
+                        p.Paydate,
+                        p.UnpaidDays
+                    })
+                    .ToList();
+
                 dgvSalary.DataSource = rows
                     .Select(p => new
                     {
@@ -204,6 +203,7 @@ namespace EmployeeManagementSystem {
                         UnpaidDays = p.UnpaidDays
                     })
                     .ToList();
+
                 long totalAll = rows.Sum(s => ComputeNetTotalLong(s.Salary1, s.From, s.To, s.UnpaidDays));
                 lbltotal.Text = CurrencyFormatter.Format(totalAll) + "$";
             } catch (Exception ex)

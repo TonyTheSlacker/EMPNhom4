@@ -47,6 +47,31 @@ namespace EmployeeManagementSystem {
             DrawChart(e.Graphics);
         }
 
+        // Helpers to compute salary totals locally (avoid reading DB column with mismatched type)
+        private int CalcMonths(DateTime from, DateTime to) {
+            from = from.Date; to = to.Date;
+            if (to < from) return 0;
+            int months = (to.Year - from.Year) * 12 + (to.Month - from.Month);
+            if (to.Day < from.Day) months--;
+            if (months < 1) months = 1;
+            return months;
+        }
+        private long ComputeNetTotalLong(int monthlySalary, DateTime from, DateTime to, int unpaidDays) {
+            var f = from.Date; var t = to.Date;
+            if (t < f || monthlySalary <= 0) return 0L;
+            int months = CalcMonths(f, t);
+            if (months <= 0) return 0L;
+            long gross = (long)months * (long)monthlySalary;
+            int rangeDays = (t - f).Days + 1;
+            int ud = Math.Min(Math.Max(unpaidDays, 0), Math.Max(rangeDays, 0));
+            decimal dailyRate = Math.Ceiling((decimal)monthlySalary / 30m);
+            decimal deduction = ud * dailyRate;
+            decimal net = ((decimal)gross) - deduction;
+            if (net < 0) net = 0m;
+            if (net > long.MaxValue) return long.MaxValue;
+            return (long)net;
+        }
+
         private void LoadEmployees() {
             try
             {
@@ -97,30 +122,43 @@ namespace EmployeeManagementSystem {
                 if (cboMode.SelectedIndex == 0)
                 {
                     lblTitle.Text = "Salary by Department";
-                    // Refactored to perform grouping and aggregation on the database server
-                    currentData = db.Salaries
-                        .GroupBy(s => s.Employee.Department)
-                        .Select(g => new { Department = g.Key, TotalSalary = g.Sum(s => s.totalsal ?? 0) })
-                        .OrderByDescending(x => x.TotalSalary)
-                        .ToList() // Materialize the final result
-                        .Select(x => (Label: x.Department.DepName, Value: (decimal)x.TotalSalary))
+                    // Read safe columns, compute totals in-memory to avoid invalid casts on totalsal
+                    var rows = db.Salaries
+                        .Select(s => new { Dept = s.Employee.Department.DepName, s.Salary1, s.From, s.To, s.UnpaidDays })
+                        .ToList();
+
+                    currentData = rows
+                        .GroupBy(x => x.Dept)
+                        .Select(g => (
+                            Label: g.Key,
+                            Value: g.Sum(r => (decimal)ComputeNetTotalLong(r.Salary1, r.From, r.To, r.UnpaidDays))
+                        ))
+                        .OrderByDescending(x => x.Value)
                         .ToList();
                 } else if (cboMode.SelectedIndex == 1)
                 {
                     lblTitle.Text = "Total Salary by Month";
-                    // Refactored to perform grouping and aggregation on the database server
-                    currentData = db.Salaries
+                    var rows = db.Salaries
+                        .Select(s => new { s.Paydate, s.Salary1, s.From, s.To, s.UnpaidDays })
+                        .ToList();
+
+                    var grouped = rows
                         .GroupBy(s => new { s.Paydate.Year, s.Paydate.Month })
-                        .Select(g => new { Year = g.Key.Year, Month = g.Key.Month, TotalSalary = g.Sum(s => s.totalsal ?? 0) })
-                        .ToList() // Materialize the final result
-                        .Select(g => (Label: new DateTime(g.Year, g.Month, 1).ToString("MM/yyyy"), Value: (decimal)g.TotalSalary))
-                        .OrderBy(x => DateTime.Parse("01/" + x.Label))
+                        .Select(g => new {
+                            KeyDate = new DateTime(g.Key.Year, g.Key.Month, 1),
+                            Total = g.Sum(r => (decimal)ComputeNetTotalLong(r.Salary1, r.From, r.To, r.UnpaidDays))
+                        })
+                        .OrderBy(x => x.KeyDate)
+                        .ToList();
+
+                    currentData = grouped
+                        .Select(x => (Label: x.KeyDate.ToString("MM/yyyy"), Value: x.Total))
                         .ToList();
                 } else
                 {
                     lblTitle.Text = "Employee Earnings by Month";
-                    int? empId = SelectedEmployeeId();
                     var query = db.Salaries.AsQueryable();
+                    int? empId = SelectedEmployeeId();
                     if (empId.HasValue)
                         query = query.Where(s => s.Employee.EmpID == empId.Value);
                     if (chkRange.Checked)
@@ -129,13 +167,22 @@ namespace EmployeeManagementSystem {
                         var t = dtTo.Value.Date;
                         query = query.Where(s => s.Paydate.Date >= f && s.Paydate.Date <= t);
                     }
-                    // Refactored to perform grouping and aggregation on the database server
-                    currentData = query
+
+                    var rows = query
+                        .Select(s => new { s.Paydate, s.Salary1, s.From, s.To, s.UnpaidDays })
+                        .ToList();
+
+                    var grouped = rows
                         .GroupBy(s => new { s.Paydate.Year, s.Paydate.Month })
-                        .Select(g => new { Year = g.Key.Year, Month = g.Key.Month, TotalSalary = g.Sum(s => s.totalsal ?? 0) })
-                        .ToList() // Materialize the final result
-                        .Select(g => (Label: new DateTime(g.Year, g.Month, 1).ToString("MM/yyyy"), Value: (decimal)g.TotalSalary))
-                        .OrderBy(x => DateTime.Parse("01/" + x.Label))
+                        .Select(g => new {
+                            KeyDate = new DateTime(g.Key.Year, g.Key.Month, 1),
+                            Total = g.Sum(r => (decimal)ComputeNetTotalLong(r.Salary1, r.From, r.To, r.UnpaidDays))
+                        })
+                        .OrderBy(x => x.KeyDate)
+                        .ToList();
+
+                    currentData = grouped
+                        .Select(x => (Label: x.KeyDate.ToString("MM/yyyy"), Value: x.Total))
                         .ToList();
                 }
                 maxValue = currentData.Count > 0 ? currentData.Max(d => d.Value) : 1m;

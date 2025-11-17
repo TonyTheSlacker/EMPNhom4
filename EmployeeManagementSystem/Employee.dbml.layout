@@ -20,20 +20,20 @@
         <elementListCompartment Id="0bf8fd39-ea5b-455b-8432-e7275060fa97" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="198f07de-b621-45c5-a17a-fab1067f8fe0" absoluteBounds="6.25, 1, 2, 2.5401025390625005">
+    <classShape Id="198f07de-b621-45c5-a17a-fab1067f8fe0" absoluteBounds="6.25, 1.375, 2.125, 2.7324039713541666">
       <DataClassMoniker Name="/EmployeeDataContext/Salary" />
       <nestedChildShapes>
-        <elementListCompartment Id="0c976bf1-8cfb-464b-8505-6a8f46d74c2e" absoluteBounds="6.265, 1.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="0c976bf1-8cfb-464b-8505-6a8f46d74c2e" absoluteBounds="6.265, 1.835, 2.0949999999999998, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.75 : 2.22199625651042); (3.5 : 2.22199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 2.22199625651042); (3.5 : 2.22199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/EmployeeDataContext/Department/Department_Employee" />
       <nodes>
         <classShapeMoniker Id="0964514c-52ba-42fc-bff6-c09c26fe6680" />
         <classShapeMoniker Id="263d8c33-340a-41b3-85eb-5ee848ee25ba" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 2.17390055338542); (6.25 : 2.17390055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 2.36140055338542); (6.25 : 2.36140055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/EmployeeDataContext/Employee/Employee_Salary" />
       <nodes>
         <classShapeMoniker Id="263d8c33-340a-41b3-85eb-5ee848ee25ba" />

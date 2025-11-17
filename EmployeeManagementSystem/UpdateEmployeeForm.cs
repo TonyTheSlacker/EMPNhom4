@@ -175,7 +175,8 @@ namespace EmployeeManagementSystem {
                     // Align salary period start with employee join date so months reflect Join Date change
                     s.From = empl.EmpJDate;
                     s.Period = CalcMonths(s.From, s.To);
-                    s.totalsal = ComputeNetTotalLong(s.Salary1, s.From, s.To, s.UnpaidDays);
+                    long newTotal = ComputeNetTotalLong(s.Salary1, s.From, s.To, s.UnpaidDays);
+                    s.totalsal = (int)Math.Min(newTotal, (long)int.MaxValue);
                 }
                 db.SubmitChanges();
                 MessageBox.Show("Updated sucessfully !", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);

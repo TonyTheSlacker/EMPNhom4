@@ -137,7 +137,7 @@ namespace EmployeeManagementSystem {
                 dtpkFrom.Value = salary.From;
                 dtpkTo.Value = salary.To;
                 dtpkPayDate.Value = salary.Paydate;
-                numUnpaidDays.Value = salary.UnpaidDays.GetValueOrDefault(0);
+                numUnpaidDays.Value = salary.UnpaidDays;
             }
         }
 
@@ -198,7 +198,8 @@ namespace EmployeeManagementSystem {
             };
             int parsedSal;
             sal.Salary1 = int.TryParse(txtSalary.Text, out parsedSal) ? parsedSal : (epl?.EmpSal ?? 0);
-            sal.totalsal = ComputeTotalByPaidDaysLong(sal.Salary1, sal.From, sal.To, sal.UnpaidDays.GetValueOrDefault(0));
+            var netAdd = ComputeTotalByPaidDaysLong(sal.Salary1, sal.From, sal.To, sal.UnpaidDays);
+            sal.totalsal = (int)Math.Min(netAdd, (long)int.MaxValue);
             db.Salaries.InsertOnSubmit(sal);
             db.SubmitChanges();
             MessageBox.Show("Inserted Sucessfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -244,7 +245,8 @@ namespace EmployeeManagementSystem {
             tmp.Paydate = dtpkPayDate.Value.Date;
             tmp.Period = CalculateMonths(from, to);
             tmp.UnpaidDays = (int)numUnpaidDays.Value;
-            tmp.totalsal = ComputeTotalByPaidDaysLong(tmp.Salary1, tmp.From, tmp.To, tmp.UnpaidDays.GetValueOrDefault(0));
+            var netUpd = ComputeTotalByPaidDaysLong(tmp.Salary1, tmp.From, tmp.To, tmp.UnpaidDays);
+            tmp.totalsal = (int)Math.Min(netUpd, (long)int.MaxValue);
             db.SubmitChanges();
             MessageBox.Show("Updated Sucessfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Dispose();

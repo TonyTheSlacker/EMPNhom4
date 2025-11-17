@@ -9,6 +9,7 @@ using System.Globalization; // added for Vietnamese currency formatting
 namespace EmployeeManagementSystem {
     public partial class ReportForm : Form {
         readonly EmployeeDataContext db = new EmployeeDataContext();
+        private bool _syncingUi; // prevent recursive updates
         public ReportForm() {
             InitializeComponent();
         }
@@ -19,6 +20,31 @@ namespace EmployeeManagementSystem {
             return amount.ToString("N0", new CultureInfo("vi-VN")) + " VNĐ"; // N0 uses grouping and no decimals
         }
         private string FormatVnd(int amount) { return FormatVnd((long)amount); }
+
+        // Salary total helpers (avoid reading mismatched DB column types)
+        private int CalcMonths(DateTime from, DateTime to) {
+            from = from.Date; to = to.Date;
+            if (to < from) return 0;
+            int months = (to.Year - from.Year) * 12 + (to.Month - from.Month);
+            if (to.Day < from.Day) months--;
+            if (months < 1) months = 1;
+            return months;
+        }
+        private long ComputeNetTotalLong(int monthlySalary, DateTime from, DateTime to, int unpaidDays) {
+            var f = from.Date; var t = to.Date;
+            if (t < f || monthlySalary <= 0) return 0L;
+            int months = CalcMonths(f, t);
+            if (months <= 0) return 0L;
+            long gross = (long)months * (long)monthlySalary;
+            int rangeDays = (t - f).Days + 1;
+            int ud = Math.Min(Math.Max(unpaidDays, 0), Math.Max(rangeDays, 0));
+            decimal dailyRate = Math.Ceiling((decimal)monthlySalary / 30m);
+            decimal deduction = ud * dailyRate;
+            decimal net = ((decimal)gross) - deduction;
+            if (net < 0) net = 0m;
+            if (net > long.MaxValue) return long.MaxValue;
+            return (long)net;
+        }
 
         private string ResolveReportDefinition(string fileName, out bool embedded) {
             embedded = false;
@@ -110,8 +136,11 @@ namespace EmployeeManagementSystem {
             cbbGender.SelectedIndex = 0;
             rdoAllDay.Checked = true;
 
-            // Populate names and IDs
-            var employees = db.Employees.Select(emp => new { emp.EmpID, emp.EmpName }).ToList();
+            // Populate names and IDs from employees that actually have salary rows to avoid empty selections
+            var employees = db.Salaries.Select(s => new { s.Employee.EmpID, s.Employee.EmpName })
+                                       .Distinct()
+                                       .OrderBy(x => x.EmpName)
+                                       .ToList();
             cbbFullName.Items.Clear();
             cbbEmpID.Items.Clear();
             cbbFullName.Items.Add("All");
@@ -166,17 +195,30 @@ namespace EmployeeManagementSystem {
         {
             try
             {
-                string gender = cbbGender.Text;
-                string nameSelected = cbbFullName.Text;
-                string idSelected = cbbEmpID.Text;
+                string gender = cbbGender.Text.Trim();
+                string nameSelected = cbbFullName.Text.Trim();
+                string idSelected = cbbEmpID.Text.Trim();
 
                 var baseQuery = db.Salaries.AsQueryable();
-                if (gender != "All")
-                    baseQuery = baseQuery.Where(m => m.Employee.EmpGen == gender);
-                if (nameSelected != "All")
-                    baseQuery = baseQuery.Where(m => m.EmployeeName == nameSelected);
-                if (idSelected != "All")
-                    baseQuery = baseQuery.Where(m => m.Employee.EmpID.ToString() == idSelected);
+
+                // Normalize gender filter (case-insensitive, trims)
+                if (!string.Equals(gender, "All", StringComparison.OrdinalIgnoreCase))
+                    baseQuery = baseQuery.Where(m => m.Employee.EmpGen != null && m.Employee.EmpGen.ToLower() == gender.ToLower());
+
+                // Prefer filtering by EmployeeID; if name chosen, resolve ID and filter by ID
+                int empIdVal;
+                int? empIdFilter = null;
+                if (!string.Equals(idSelected, "All", StringComparison.OrdinalIgnoreCase) && int.TryParse(idSelected, out empIdVal))
+                {
+                    empIdFilter = empIdVal;
+                }
+                else if (!string.Equals(nameSelected, "All", StringComparison.OrdinalIgnoreCase))
+                {
+                    empIdFilter = db.Employees.Where(e => e.EmpName == nameSelected).Select(e => (int?)e.EmpID).FirstOrDefault();
+                }
+                if (empIdFilter.HasValue)
+                    baseQuery = baseQuery.Where(m => m.Employee.EmpID == empIdFilter.Value);
+
                 if (rdoFromto.Checked)
                 {
                     DateTime fromDate = dtpkFrom.Value.Date;
@@ -184,9 +226,24 @@ namespace EmployeeManagementSystem {
                     baseQuery = baseQuery.Where(m => m.From >= fromDate && m.To <= toDate);
                 }
 
-                var projected = baseQuery.OrderBy(m => m.Employee.EmpID).Select(m => new
-                {
-                    EmployeeID = m.Employee.EmpID,
+                // Select only safe columns (DON'T read m.totalsal, which may have a mismatched DB type)
+                var safeRows = baseQuery
+                    .OrderBy(m => m.Employee.EmpID)
+                    .Select(m => new {
+                        EmployeeID = m.Employee.EmpID,
+                        m.Scode,
+                        EmployeeName = m.Employee.EmpName, // use normalized name from Employee table
+                        Salary1 = m.Salary1,
+                        Period = m.Period,
+                        m.From,
+                        m.To,
+                        m.Paydate,
+                        UnpaidDays = m.UnpaidDays
+                    })
+                    .ToList();
+
+                var projected = safeRows.Select(m => new {
+                    EmployeeID = m.EmployeeID,
                     m.Scode,
                     m.EmployeeName,
                     Salary = m.Salary1,
@@ -194,7 +251,7 @@ namespace EmployeeManagementSystem {
                     m.From,
                     m.To,
                     m.Paydate,
-                    totalsal = m.totalsal ?? 0,
+                    totalsal = ComputeNetTotalLong(m.Salary1, m.From, m.To, m.UnpaidDays),
                     UnpaidDays = m.UnpaidDays
                 }).ToList();
 
@@ -234,9 +291,68 @@ namespace EmployeeManagementSystem {
         private void label3_Click(object sender, EventArgs e) {
         }
         private void cbbFullName_SelectedIndexChanged(object sender, EventArgs e) {
+            if (_syncingUi) { Filters_Changed(sender, e); return; }
+            try
+            {
+                _syncingUi = true;
+                if (string.Equals(cbbFullName.Text, "All", StringComparison.OrdinalIgnoreCase))
+                {
+                    cbbEmpID.SelectedIndex = 0;
+                }
+                else
+                {
+                    var id = db.Employees.Where(x => x.EmpName == cbbFullName.Text)
+                                          .Select(x => (int?)x.EmpID)
+                                          .FirstOrDefault();
+                    if (id.HasValue)
+                    {
+                        string idText = id.Value.ToString();
+                        for (int i = 0; i < cbbEmpID.Items.Count; i++)
+                        {
+                            if (string.Equals(cbbEmpID.Items[i].ToString(), idText, StringComparison.Ordinal))
+                            {
+                                cbbEmpID.SelectedIndex = i;
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            finally { _syncingUi = false; }
             Filters_Changed(sender, e);
         }
         private void cbbEmpID_SelectedIndexChanged(object sender, EventArgs e) {
+            if (_syncingUi) { Filters_Changed(sender, e); return; }
+            try
+            {
+                _syncingUi = true;
+                if (string.Equals(cbbEmpID.Text, "All", StringComparison.OrdinalIgnoreCase))
+                {
+                    cbbFullName.SelectedIndex = 0;
+                }
+                else
+                {
+                    int id;
+                    if (int.TryParse(cbbEmpID.Text, out id))
+                    {
+                        var name = db.Employees.Where(x => x.EmpID == id)
+                                                .Select(x => x.EmpName)
+                                                .FirstOrDefault();
+                        if (!string.IsNullOrEmpty(name))
+                        {
+                            for (int i = 0; i < cbbFullName.Items.Count; i++)
+                            {
+                                if (string.Equals(cbbFullName.Items[i].ToString(), name, StringComparison.Ordinal))
+                                {
+                                    cbbFullName.SelectedIndex = i;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            finally { _syncingUi = false; }
             Filters_Changed(sender, e);
         }
     }
