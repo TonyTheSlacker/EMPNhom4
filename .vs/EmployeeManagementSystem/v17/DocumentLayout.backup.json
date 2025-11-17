@@ -3,52 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\Report1.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}|XML",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EmployeeManagementSystem\\Report1.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}|XML"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|c:\\users\\hoanh\\documents\\employeemanagementsystem\\employeemanagementsystem\\employeemanagementsystem\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\employeemanagementsystem\\reportform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\reportform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\employeemanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\employeemanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\employeemanagementsystem\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\employeemanagementsystem\\statisticschartform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\statisticschartform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\employeemanagementsystem\\statisticschartform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\statisticschartform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\employeemanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\employeemanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\employeemanagementsystem\\aboutusform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\aboutusform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\employeemanagementsystem\\aboutusform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\aboutusform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|c:\\users\\hoanh\\documents\\employeemanagementsystem\\employeemanagementsystem\\employeemanagementsystem\\accountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\accountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|c:\\users\\hoanh\\documents\\employeemanagementsystem\\employeemanagementsystem\\employeemanagementsystem\\employeeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\employeeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|c:\\users\\hoanh\\documents\\employeemanagementsystem\\employeemanagementsystem\\employeemanagementsystem\\departmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\departmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|c:\\users\\hoanh\\documents\\employeemanagementsystem\\employeemanagementsystem\\employeemanagementsystem\\departmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D59E2EFC-57C9-491A-B471-41A7910C726C}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\departmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -71,145 +43,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ReportForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\ReportForm.Designer.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\ReportForm.Designer.cs",
-              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\ReportForm.Designer.cs",
-              "RelativeToolTip": "EmployeeManagementSystem\\ReportForm.Designer.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Title": "EmployeeForm.cs",
+              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeForm.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\EmployeeForm.cs",
+              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeForm.cs",
+              "RelativeToolTip": "EmployeeManagementSystem\\EmployeeForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T16:34:50.266Z",
+              "WhenOpened": "2025-11-17T04:13:10.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentForm.cs",
+              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\DepartmentForm.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\DepartmentForm.cs",
+              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\DepartmentForm.cs",
+              "RelativeToolTip": "EmployeeManagementSystem\\DepartmentForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T04:13:03.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DepartmentForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\DepartmentForm.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\DepartmentForm.cs",
+              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\DepartmentForm.cs [Design]",
+              "RelativeToolTip": "EmployeeManagementSystem\\DepartmentForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T04:13:02.294Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountForm.cs",
+              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\AccountForm.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\AccountForm.cs",
+              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\AccountForm.cs",
+              "RelativeToolTip": "EmployeeManagementSystem\\AccountForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T04:12:45.889Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Report1.rdlc [XML]",
-              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\Report1.rdlc",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Report1.rdlc",
-              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\Report1.rdlc [XML]",
-              "RelativeToolTip": "EmployeeManagementSystem\\Report1.rdlc [XML]",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAiwPsBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2025-11-15T07:53:36.649Z",
-              "EditorCaption": " [XML]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReportForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\ReportForm.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\ReportForm.cs",
-              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\ReportForm.cs [Design]",
-              "RelativeToolTip": "EmployeeManagementSystem\\ReportForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T07:52:07.785Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StatisticsChartForm.cs",
-              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\StatisticsChartForm.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\StatisticsChartForm.cs",
-              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\StatisticsChartForm.cs",
-              "RelativeToolTip": "EmployeeManagementSystem\\StatisticsChartForm.cs",
-              "ViewState": "AgIAABgBAAAAAAAAAAAAADQBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T05:46:24.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ReportForm.cs",
-              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\ReportForm.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\ReportForm.cs",
-              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\ReportForm.cs",
-              "RelativeToolTip": "EmployeeManagementSystem\\ReportForm.cs",
-              "ViewState": "AgIAAOwAAAAAAAAAAOBiwPMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T05:45:39.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StatisticsChartForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\StatisticsChartForm.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\StatisticsChartForm.cs",
-              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\StatisticsChartForm.cs [Design]",
-              "RelativeToolTip": "EmployeeManagementSystem\\StatisticsChartForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T05:43:39.421Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\Program.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Program.cs",
-              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\Program.cs",
-              "RelativeToolTip": "EmployeeManagementSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T20:28:51.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\LoginForm.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\LoginForm.cs",
-              "RelativeToolTip": "EmployeeManagementSystem\\LoginForm.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAYwD4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T20:26:42.956Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\LoginForm.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\LoginForm.cs [Design]",
-              "RelativeToolTip": "EmployeeManagementSystem\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T20:24:21.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "AboutUsForm.cs",
               "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\AboutUsForm.cs",
               "RelativeDocumentMoniker": "EmployeeManagementSystem\\AboutUsForm.cs",
               "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\AboutUsForm.cs",
               "RelativeToolTip": "EmployeeManagementSystem\\AboutUsForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T20:19:14.31Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AboutUsForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\AboutUsForm.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\AboutUsForm.cs",
-              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\AboutUsForm.cs [Design]",
-              "RelativeToolTip": "EmployeeManagementSystem\\AboutUsForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T20:19:09.995Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\Form1.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Form1.cs",
-              "ToolTip": "C:\\Users\\hoanh\\Documents\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem\\Form1.cs [Design]",
-              "RelativeToolTip": "EmployeeManagementSystem\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T20:18:28.904Z"
+              "WhenOpened": "2025-11-11T20:19:14.31Z",
+              "EditorCaption": ""
             }
           ]
         }

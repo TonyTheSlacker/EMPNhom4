@@ -9,28 +9,39 @@ namespace EmployeeManagementSystem {
     public partial class EmployeeForm : Form {
 
         EmployeeDataContext db = new EmployeeDataContext();
+        // Add a list to hold all employees for in-memory filtering
+        private IQueryable<Employee> allEmployees;
         public EmployeeForm() {
             InitializeComponent();
         }
 
         private void ResetContext() {
-            try { db.Dispose(); } catch { }
+            try
+            {
+                db.Dispose();
+            } catch { }
             db = new EmployeeDataContext();
         }
 
         private void ApplyTotals() {
-            // Sum of base salaries (unformatted values) then format
             var total = db.Employees.Any() ? db.Employees.Sum(e => e.EmpSal) : 0;
             labelTotalSalaryTitle.Visible = true;
             lblTotalSalary.Visible = true;
-            lblTotalSalary.Text = CurrencyFormatter.Format(total) + " $"; // optional currency symbol
+            lblTotalSalary.Text = CurrencyFormatter.Format(total) + " $";
         }
 
         public void LoaddgvEmployee() {
-            ResetContext(); // ensure fresh data after edits from other DataContext instances
+            ResetContext();
+            // Load all employees into the in-memory list
+            allEmployees = db.Employees.AsQueryable();
+            BindGrid(allEmployees);
+        }
+
+        // New method to bind a list of employees to the grid
+        private void BindGrid(IQueryable<Employee> employees) {
             dgvEmployee.RowTemplate.Height = 50;
             string t = Application.StartupPath + @"\AddressImage\";
-            dgvEmployee.DataSource = db.Employees.Select(p => new
+            var dataSource = employees.Select(p => new
             {
                 p.EmpID,
                 p.EmpGen,
@@ -40,7 +51,9 @@ namespace EmployeeManagementSystem {
                 p.EmpJDate,
                 EmpSal = CurrencyFormatter.Format(p.EmpSal),
                 EmpImage = Image.FromFile(t + p.EmpImage.ToString())
-            });
+            }).ToList();
+
+            dgvEmployee.DataSource = dataSource;
             lbltotal.Text = dgvEmployee.RowCount.ToString();
             dgvEmployee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             ApplyTotals();
@@ -127,28 +140,23 @@ namespace EmployeeManagementSystem {
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e) {
-            if (txtSearch.Text == "")
+            string searchValue = txtSearch.Text.Trim().ToLower();
+
+            if (string.IsNullOrEmpty(searchValue))
             {
-                LoaddgvEmployee();
-            } else
-            {
-                dgvEmployee.RowTemplate.Height = 50;
-                string t = Application.StartupPath + @"\AddressImage\";
-                dgvEmployee.DataSource = db.Employees.Where(m => m.EmpName.Contains(txtSearch.Text.Trim())).Select(p => new
-                {
-                    p.EmpID,
-                    p.EmpGen,
-                    DepName = p.Department.DepName,
-                    p.EmpName,
-                    p.EmpDOB,
-                    p.EmpJDate,
-                    EmpSal = CurrencyFormatter.Format(p.EmpSal),
-                    EmpImage = Image.FromFile(t + p.EmpImage.ToString())
-                });
-                lbltotal.Text = dgvEmployee.RowCount.ToString();
-                dgvEmployee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                ApplyTotals();
+                // If search is cleared, show all employees from the in-memory list
+                BindGrid(allEmployees);
+                return;
             }
+
+            // Use a comprehensive LINQ query to filter the in-memory list
+            var filteredEmployees = allEmployees
+                .Where(emp => emp.EmpName.ToLower().Contains(searchValue) ||
+                              emp.EmpID.ToString().Contains(searchValue) ||
+                              emp.EmpGen.ToLower().Contains(searchValue) ||
+                              emp.Department.DepName.ToLower().Contains(searchValue));
+
+            BindGrid(filteredEmployees);
         }
     }
 }

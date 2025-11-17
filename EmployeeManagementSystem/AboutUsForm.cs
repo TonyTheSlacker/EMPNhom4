@@ -1,21 +1,30 @@
 ﻿using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace EmployeeManagementSystem {
     public partial class AboutUsForm : Form {
         public AboutUsForm() {
             InitializeComponent();
-            AddMember("Châu Hoàn Thiện", "49.01.103.077", "Database, UI design, Form design");
-            AddMember("Đặng Minh Phúc", "49.01.103.065", "Form design, Testing");
-            AddMember("Trần Minh Mẫn", "49.01.103.049", "Report Document, Presentation");
-            AddMember("Nguyễn Lê Thanh Nhàn", "49.01.103.055", "Report Document, Presentation");
-        }
 
-        private void AddMember(string fullName, string studentId, string contribution) {
-            var card = BuildCard(fullName, studentId, contribution);
-            this.flpCards.Controls.Add(card);
+            // 1. Define the data in array
+            var members = new[]
+            {
+                new { FullName = "Châu Hoàn Thiện", StudentId = "49.01.103.077", Contribution = "Database, UI design, Form design" },
+                new { FullName = "Đặng Minh Phúc", StudentId = "49.01.103.065", Contribution = "Form design, Testing" },
+                new { FullName = "Trần Minh Mẫn", StudentId = "49.01.103.049", Contribution = "Report Document, Presentation" },
+                new { FullName = "Nguyễn Lê Thanh Nhàn", StudentId = "49.01.103.055", Contribution = "Report Document, Presentation" }
+            };
+
+            // 2. data to UI Controls[]
+            var memberCards = members
+                .Select(member => BuildCard(member.FullName, member.StudentId, member.Contribution))
+                .ToArray();
+
+            // 3. controls to panel
+            this.flpCards.Controls.AddRange(memberCards);
         }
 
         private Control BuildCard(string fullName, string studentId, string contribution) {
