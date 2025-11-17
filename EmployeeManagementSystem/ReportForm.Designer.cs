@@ -1,4 +1,4 @@
-﻿namespace EmployeeManagementSystem
+namespace EmployeeManagementSystem
 {
     partial class ReportForm
     {
