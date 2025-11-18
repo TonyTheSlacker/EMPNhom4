@@ -308,4 +308,3 @@ C:\Users\hoanh\Documents\HCMUE\2025-2026-1st Semester\COMP1019-LTWIN\EMPNhom4\Em
 C:\Users\hoanh\Documents\HCMUE\2025-2026-1st Semester\COMP1019-LTWIN\EMPNhom4\EmployeeManagementSystem\obj\Debug\Employee.A4622930.Up2Date
 C:\Users\hoanh\Documents\HCMUE\2025-2026-1st Semester\COMP1019-LTWIN\EMPNhom4\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.exe
 C:\Users\hoanh\Documents\HCMUE\2025-2026-1st Semester\COMP1019-LTWIN\EMPNhom4\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.pdb
-C:\Users\hoanh\Documents\HCMUE\2025-2026-1st Semester\COMP1019-LTWIN\EMPNhom4\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.exe.config

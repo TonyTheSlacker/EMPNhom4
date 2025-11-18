@@ -45,7 +45,7 @@ namespace EmployeeManagementSystem
     #endregion
 		
 		public EmployeeDataContext() : 
-				base(global::EmployeeManagementSystem.Properties.Settings.Default.QLNHANVIENConnectionString, mappingSource)
+				base(global::EmployeeManagementSystem.Properties.Settings.Default.EmployeeManagementSystemConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -878,7 +878,8 @@ namespace EmployeeManagementSystem
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalsal", DbType="Int")]
+		// Changed mapping: totalsal stored as BigInt in database -> use nullable long to avoid InvalidCastException
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalsal", DbType="BigInt")]
 		public System.Nullable<int> totalsal
 		{
 			get
