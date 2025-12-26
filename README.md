@@ -89,4 +89,4 @@ To test the "Forgot Password" feature:
 Step 5: Run
 Press F5 to build and launch the application
 
-Disclaimer: This is a portfolio project simulating an internal HR tool. Sensitive credentials (like email passwords) should be managed via Environment Variables in a production environment.
+**Disclaimer: This is a portfolio project simulating an internal HR tool. Sensitive credentials (like email passwords) should be managed via Environment Variables in a production environment.**
