@@ -81,10 +81,10 @@ namespace EmployeeManagementSystem { // Application namespace
                 {
                     otp = rd.Next(10000, 99999); // Generate a 5-digit OTP
 
-                    var from = new MailAddress("hoanhoan010@gmail.com"); // Sender email address
+                    var from = new MailAddress("youremail@org"); // Sender email address
                     var to = new MailAddress(acc.Email); // Recipient email (from account record)
 
-                    const string frompass = "wvki gjuv cfkd cjbs"; // Gmail app password (should be stored securely; here hard-coded)
+                    const string frompass = "aaaa bbbb cccc dddd"; // Gmail app password (should be stored securely; here hard-coded)
                     const string subject = "OTP CODE"; // Email subject line
                     string body = "Your OTP to reset password is: " + otp.ToString(); // Email body with OTP
 
